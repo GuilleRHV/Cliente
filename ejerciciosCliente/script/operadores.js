@@ -29,7 +29,8 @@
     }else{
         document.write(num1+"<"+num2);
     }
-
+    var numeropantalla=prompt("Introduce info");
+    document.write("<br>Has escrito: "+numeropantalla);
 
     
 }
