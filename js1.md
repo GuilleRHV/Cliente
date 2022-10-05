@@ -1,4 +1,4 @@
-#JavaScript
+# JavaScript
 
 Es un lenguaje de programación para entornos web, que tiene una sintaxis parecida a C. Es un lenguaje débilmente tipado, Nos va a permitir usar las variables de forma ambigua. Va a ser el interprete el que se va a encargar la conversión de tipos. 
 Var opción = “Has seleccionado opción”;
@@ -11,12 +11,17 @@ Tipos de datos:
 *	Numericos
 *	String: van a representar letras, digitos y cualquier carácter Unicode que sea representado. Deben estar representados en comillas simples o dobles.
 Secuencias de escape
-	\\	\
-	\’	‘
+	"\\	\
+	\’">"‘
+	
 	\”		
+	
 	\m	salto de línea
+	
 	\t	tabulación
+	
 	\v 	“
+	
 	\f 	salto de pagina
 	\r 	retorno de carbo
 
@@ -24,8 +29,8 @@ Secuencias de escape
 Crear fichero html donde se utilicen diferentes secuencias de escape
 
 
-*document.wrtite() es una instruccion js para insertar html-> modifica DOM
-*alert->INFO Js interprete
+* document.wrtite() es una instruccion js para insertar html-> modifica DOM
+* alert->INFO Js interprete
 _
 Operadores
 *Aritmeticos
@@ -33,15 +38,17 @@ Operadores
 *Asignacion
 
 Comparacion Numeros (devuelve booleano)
+
     *"<" menor
     *">" mayor
     *"<=" menor o igual
     *">=" mayor o igual
+    
     *"!=" diferente
     *"==" igual
     *"===" estrictamente igual
     *"!==" estrictamente diferente
-
+    
     *Si (1==1) entonces es True
     *Si (1===1) entoces es True
     *Si (TRUE==1) entonces es True
@@ -50,4 +57,15 @@ Comparacion Numeros (devuelve booleano)
 Declarar 2 variables de tipo numerico y probando operadores aritmeticos con ellas
 operadores.html 
 generar una segunda funcion donde probar los operadores de asignacion
+
+## Sentencias condicionales
+Nos van a permitir la gestion de la toma de decisiones. En estas sentencias se evaluaran las condiciones y se ejecutaran una serie de instrucciones de acuerdo al resultado.
+
+    
+    if(expresion){
+    bloque true
+    }else{
+    bloque false{
+    
+    
 

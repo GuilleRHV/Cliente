@@ -20,6 +20,15 @@
     document.writeln(a+"==="+c+"="+(a===c)+"<br>");
     document.writeln(a+"!="+c+"="+(a!=c)+"<br>");
     
+    var num1=6;
+    var num2=15;
+    document.write("Prueba condicional IF<br>");
+    if(num1>num2){
+        document.write(num1+">"+num2);
+
+    }else{
+        document.write(num1+"<"+num2);
+    }
 
 
     
