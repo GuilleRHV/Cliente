@@ -6,5 +6,7 @@ function mifuncion(){
     window.alert(local);
     global++;
     window.alert(global);
+
+    document.write("Hola<br>mundo");
 }
 mifuncion();
