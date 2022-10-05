@@ -22,3 +22,32 @@ Secuencias de escape
 
 
 Crear fichero html donde se utilicen diferentes secuencias de escape
+
+
+*document.wrtite() es una instruccion js para insertar html-> modifica DOM
+*alert->INFO Js interprete
+_
+Operadores
+*Aritmeticos
+*Logicos
+*Asignacion
+
+Comparacion Numeros (devuelve booleano)
+    *"<" menor
+    *">" mayor
+    *"<=" menor o igual
+    *">=" mayor o igual
+    *"!=" diferente
+    *"==" igual
+    *"===" estrictamente igual
+    *"!==" estrictamente diferente
+
+    *Si (1==1) entonces es True
+    *Si (1===1) entoces es True
+    *Si (TRUE==1) entonces es True
+    *Si (TRUE===1) entonces es Falso
+
+Declarar 2 variables de tipo numerico y probando operadores aritmeticos con ellas
+operadores.html 
+generar una segunda funcion donde probar los operadores de asignacion
+
