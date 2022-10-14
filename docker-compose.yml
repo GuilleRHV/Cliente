@@ -1,0 +1,19 @@
+version: "3"
+services:
+  ejercicios:
+    image: php:7.4-apache
+    container_name: ejercicios.local
+    ports:
+      - "80:80"
+    hostname: ejerciciosCliente
+    volumes:
+      - ./data/ejerciciosCliente:/var/www/html
+    environment:
+      - VIRTUAL_HOST=ejercicios.local,www.ejercicios.local
+    restart: always
+    networks:
+      - frontend
+      - backend
+networks:
+  frontend:
+  backend:
