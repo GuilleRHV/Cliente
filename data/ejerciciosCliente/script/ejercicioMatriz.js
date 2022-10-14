@@ -1,8 +1,18 @@
 
-document.write("as");
-for(var i=0;i<3;i++){
-    window.log("Valor de "+i+"<br>");
-    for(var y=0;i<3;y++){
-        window.log("Valor de ("+i+","+y+")<br>");
+/*
+for(var i=0;i<6;i++){
+    console.log("VALOR DE "+i);
+    for(var y=0;y<6;y++){
+        console.log("Valor de ("+i+","+y+")");
+
     }
 }
+*/
+for(var i=0;i<6;i++){
+    document.write("VALOR DE "+i+"<br>");
+    for(var y=0;y<6;y++){
+        document.write("Valor de ("+i+","+y+")<br>");
+
+    }
+}
+
