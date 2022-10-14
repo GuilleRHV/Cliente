@@ -34,7 +34,19 @@ que se adapta a los cambios del DOM.
 
 * document.getElementsByTagName("name");
     
+### Ejercicio clase
+    realizar una funcion division que calcule el resultado dividendo/divisor donde ambos seran pedidos por pantalla, en caso de que el divisor==0 
+    se mostrara un mensaje alertando que no es posible hacer la division por 0 sino mostrara el resultado. Utiliza este condicional:
+_
 
-realizar una funcion division que calcule el resultado dividendo/divisor donde ambos seran pedidos por pantalla, en caso de que el divisor==0 
-se mostrara un mensaje alertando que no es posible hacer la division por 0 sino mostrara el resultado. Utiliza este condicional:
-    condicion?resultadotrue:resultadofalse
+    Realizar 2 bucles anidados donde el objetivo es sacar por consola.
+console.log la siguiente inf
+Sacar matriz 3x3 elementos y el resultado equivalente será
+Valor del 0
+* Valor de j (0,0=
+* Valor de j (0,1)
+Valor de 1:
+* Valor de (1,0)
+* Valor de (1,1)
+
+## condicion?resultadotrue:resultadofalse
