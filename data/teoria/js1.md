@@ -67,5 +67,12 @@ Nos van a permitir la gestion de la toma de decisiones. En estas sentencias se e
     }else{
     bloque false{
     
-    
+   
+## Ambito
+Cuanto tiempo estara viva una variable.
+var variable = 1;
+function fun(){
+//Esta durará lo mismo que dure la funcion
+var valor=1;
+
 
