@@ -75,4 +75,13 @@ function fun(){
 //Esta durará lo mismo que dure la funcion
 var valor=1;
 
+## Uso basico nodos
 
+Una vez acedemos a un nodo podremos usarlo como referencia para usar las siguientes propiedades que van a permitir a movernos entre ellos.
+* childNode[nodo] Nos va a decvolver una coleccion con los nodos hijo
+El aceso a cada uno de los hijos se hace en un array.
+* parentNode : Nos va a devolver el nodo padre del elemento.
+* firstChild: Nos va a devolver el 1er nodo hijo y en su defecto un valor nulo.
+* lastChild[] nos va a devolver el ultimo hijo o valor null si no lo encuentra
+* nextSibling devuelve el siguiente nodo hermano del elemento o valor nulo si es el ultimo.
+* previousSibling: Nos va a devolver el anterior nodo hermano del elemento o valor nulo si es el primero.
