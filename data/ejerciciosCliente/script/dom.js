@@ -37,10 +37,27 @@ function modificarParrafo() {
     var valor = prompt("¿Que valor quieres asignarles?");
     //element.innerHTML(element.childNodes)=valor;
 
+<<<<<<< HEAD
     // element.replaceChildren(valor);
     document.getElementById("p3").innerHTML = valor;
 
+=======
+    element.innerHTML=valor;
+  
+>>>>>>> 87d4709a8c7058d3ed2724f76717c6ea35aaca7a
 }
+
+function hijos(){
+    var element = document.getElementById("div1").childNodes;
+   // alert("Hay "+document.getElementById("div1").firstChild.nextSibling.textContent+" elementos hijos");
+   // element = document.getElementById("div1").firstChild.nextSibling;
+    for(var i = 0; i< element.length;i++){
+        document.write(element[i].textContent+"<br>");
+    }
+}
+
+
+
 //Generar un boton con funcion eliminarParrafo() que elimine el parrafo con id="p3" generado previamente
 //Para ello generaremos igualmente una variable con el parrafo a eliminar
 //y usaremos la instruccion variable.remove 
