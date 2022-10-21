@@ -1,0 +1,71 @@
+div{
+    border: 1px solid black;
+}
+
+span{
+border: 1px solid red;
+
+}
+
+.componente{
+    border: 1px solid blue;
+
+}
+
+
+
+#cabecera{
+    background-color: white;
+    height: 20%;
+
+}
+#cuerpo{
+    text-align: center;
+    background-color: white;
+    height: 60%;
+}
+#pie{
+    height: 20%;
+    color: red;
+}
+.contenido{
+    display: block;
+    /*Va a determinar la forma en la que se visualizan los elementos*/
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    padding: center;
+    text-align: center;
+}
+
+.tituloContenido{
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    color: darkblue;
+}
+/*componenteText*/
+.componenteText{
+    height: 50px;
+    width: 400px;
+    padding-top: 5px;
+
+}
+
+.cmpNombreEtiqueta{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+/*componenteText*/
