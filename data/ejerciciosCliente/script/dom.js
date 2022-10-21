@@ -37,14 +37,13 @@ function modificarParrafo() {
     var valor = prompt("¿Que valor quieres asignarles?");
     //element.innerHTML(element.childNodes)=valor;
 
-<<<<<<< HEAD
+
     // element.replaceChildren(valor);
     document.getElementById("p3").innerHTML = valor;
 
-=======
+
     element.innerHTML=valor;
-  
->>>>>>> 87d4709a8c7058d3ed2724f76717c6ea35aaca7a
+
 }
 
 function hijos(){
