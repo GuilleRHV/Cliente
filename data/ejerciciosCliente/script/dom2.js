@@ -12,7 +12,9 @@ function navegarNodos(){
     //parentNode
     var nodosPadre = document.getElementById("p1").parentNode;
     //Preguntar: porque esta devolviendo Undefined
-    console.log(nodosPadre[0]);
+    console.log(nodosPadre);
+
+    //console.log(nodosPadre[0]);
 
     //firstChild
     var primerHijo = document.getElementById("div1").firstChild;
@@ -23,7 +25,10 @@ function navegarNodos(){
     console.log(ultimohijo);
 
 
-    var textoSiguienteHermano = document.getElementById("item1").nextSibling.innerHtml;
+    var textoSiguienteHermano = document.getElementById("item1").nextSibling.textContent;
+
+    //var textoSiguienteHermano = document.getElementById("item1").nextSibling.innerHtml;
+
 
     //previousSibling
 
