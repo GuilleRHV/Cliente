@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetacion css</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,22 +11,63 @@
 
 <body>
     <div id="cabecera">Cabecera</div>
-    <div id="cuerpo">cuerpo
-        <div class="contenido">
-            <span class="tituloContenido">Formulario datos</span>
-            <div id="cmpNombre" class="componenteText componente">
-                <span id="cmpNombreEtiqueta">Nombre</span>
-                <input type="text" id="cmpNombreTxt" class="componenteTextTexto">
-
-            </div>
-
-            <div id="cmpApellido" class="componenteText componente">
-                <span id="cmpNombreEtiqueta">Apellido</span>
-                <input type="text" id="cmpNombreTxt" class="componenteTextTexto">
-
-            </div>
+    <div id="cuerpo">
+        <div id="contenido1">
 
         
+        <div class="contenido sombreado redondeado">
+            <span class="tituloContenido">Formulario datos</span>
+            <div id="cmpNombre" class="componenteText componente">
+                <span id="cmpNombreEtiqueta" class="componenteTextEtiqueta">Nombre</span>
+                <input type="text" id="cmpNombreTxt" class="componenteTextTexto">
+
+            </div>
+
+            <!--Apellido-->
+            <div id="cmpApellido" class="componenteText componente">
+                <span id="cmpApellidoEtiqueta" class="componenteTextEtiqueta">Apellido</span>
+                <input type="text" id="cmpApellidoTxt" class="componenteTextTexto">
+
+            </div>
+
+            <div id="cmpApellido2" class="componenteText componente">
+                <span id="cmpApellido2Etiqueta" class="componenteTextEtiqueta">Apellido 2</span>
+                <input type="text" id="cmpApellido2Txt" class="componenteTextTexto">
+            </div>
+
+            <div id="cmpDireccion" class="componenteText componente">
+                <span id="cmpDireccionEtiqueta" class="componenteTextEtiqueta">Direccion</span>
+                <input type="text" id="cmpDirecciopnTxt" class="componenteTextTexto">
+            </div>
+
+            <div id="cmpCiudad" class="componenteText componente">
+                <span id="cmpCiudadEtiqueta" class="componenteTextEtiqueta">Ciudad</span>
+                <input type="text" id="cmpCiudadTxt" class="componenteTextTexto">
+            </div>
+
+            
+            <!--
+                componenteLista
+                componenteListaEtiqueta
+            -->
+            <div class="componenteLista componente">
+                <span class="componenteListaEtiqueta">Lista provincias </span>
+                <select class="componenteListaTexto" name="opciones" id="">
+                    <option value="">-</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                    <option value="Huesca" selected>Huesca</option>
+                    <option value="Teruel">Teruel</option>
+                </select>
+            </div>
+            <!--Botonera-->
+            <div class="botonera">
+                <input type="button" id="btnOk" value="Ok" onclick="btnOk_onClick()">
+                <input type="button" id="btnCancel" value="Cancel" onclick="btnCancel_onClick()">
+            </div>
+
+
+
+        </div>
         </div>
     </div>
     <div id="pie">pie</div>
