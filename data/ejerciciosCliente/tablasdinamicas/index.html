@@ -1,0 +1,32 @@
+<!--
+Generar una tabla html dinamicamente a partir de dos arrays de datos: 
+    un primer array de filas que contendrá colores. 
+    un segundo array de colmnas que contedrá figuras geométricas.
+    Cada celda de la tabla mostrará un texto con el color y la figura que corresponda a la posición de la tabla respecto a los elementos de los arrays.
+    Todos los elementos html de la tabla serán generados dinámicamente en tiempo de desarrollo desde código javascript.
+    Dicha tabla será inyectada a un div que existirá en el html y cuyo identificador será 'divTablaDinamica'  
+
+Los arrays tienen una propiedad length que me permite saber el número de elementos que lo componen.
+// Declaración de ambos arrays.
+var columnas = ['triángulo', 'cuadrado', 'pentágono', 'heptágono', 'hexágono'];
+var filas = ['azul', 'rojo', 'verde', 'amarillo', 'morado'];-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script languaje="javascript" src="scripts.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="main()">
+    <div id="divTablaDinamica">
+        <table id="">
+
+        </table>
+    </div>
+</body>
+
+</html>
