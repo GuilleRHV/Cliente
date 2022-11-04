@@ -52,7 +52,7 @@ var variableCheck = document.getElementsByName("miCheck");
     }  
 
     /*
-    Dar funcionalidad a los 2 botnoes btnAddClass y btnRemovClass de forma que 
+    Dar funcionalidad a los 2 botones btnAddClass y btnRemovClass de forma que 
        - Añadan o eliminen una nueva clase a alguno de los elementos
        - La clase se va a llamar componenteUListaL
        - Utilizaremos la funcion .setAttribute(clase,'ClaseAAñadir')

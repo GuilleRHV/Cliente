@@ -6,25 +6,30 @@ function main() {
     var elemento = document.createElement("h3");
     elemento.textContent = "prueba";
     document.write(elemento.innerHTML);
+    
+    
+    
     debugger;
-    var tabla = document.createElement("table border=2");
-    for (var fil = 0; fil < filas.length; fil++) {
+    var tabla = document.createElement("table");
+    for (var i = 0; i < filas.length; i++) {
 
-        var hilera = document.createElement("tr");
-        document.write(hilera.innerHTML);
-        for (var col = 0; col < columnas.length; col++) {
-            var celda = document.createElement("td");
-            document.write(celda.innerHTML);
-            var textocelda = document.createTextNode(columnas[col]);
-            celda.appendChild(textocelda);
-            hilera.appendChild(celda);
+        var fila = document.createElement("tr");
+        //document.write(fila.innerHTML);
+        for (var j = 0; j < columnas.length; j++) {
+            var columna = document.createElement("td");
+            //document.write(columna.innerHTML);
+            var textocolumna = document.createTextNode(columnas[j]);
+            columna.appendChild(textocolumna);
+            fila.appendChild(columna);
         }
 
-        table.appendChild(hilera);
+        tabla.appendChild(fila);
     }
-    document.write(tabla.innerHTML);
-    tabla.setAttribute("border", "2");
-    document.write(table);
-
+    //document.write(tabla.innerHTML);
+    //tabla.setAttribute("border", "2");
+    
+    debugger;
+    var contenedor = document.getElementById("divPrincipal");
+    contenedor.appendChild(tabla);
 
 }
