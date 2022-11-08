@@ -1,35 +1,55 @@
-function main() {
 
 
-    var filas = ['azul', 'rojo', 'verde', 'amarillo', 'morado'];
-    var columnas = ['triángulo', 'cuadrado', 'pentágono', 'heptágono', 'hexágono'];
-    var elemento = document.createElement("h3");
-    elemento.textContent = "prueba";
-    document.write(elemento.innerHTML);
-    
-    
-    
-    debugger;
-    var tabla = document.createElement("table");
-    for (var i = 0; i < filas.length; i++) {
+const PX1_SOLID_RED = '1px solid red';
+var filaColores = ['azul', 'rojo', 'verde', 'amarillo', 'morado'];
+var columnaFiguras = ['triángulo', 'cuadrado', 'pentágono', 'heptágono', 'hexágono'];
 
-        var fila = document.createElement("tr");
-        //document.write(fila.innerHTML);
-        for (var j = 0; j < columnas.length; j++) {
-            var columna = document.createElement("td");
-            //document.write(columna.innerHTML);
-            var textocolumna = document.createTextNode(columnas[j]);
-            columna.appendChild(textocolumna);
-            fila.appendChild(columna);
+function btnGeneraTabla_click() {
+    var nombreTabla = "tblDinamica";
+    var padre = "divPrincipal";
+    generarTablaDinamica(nombreTabla, padre);
+    pintarBordesTabla(nombreTabla);
+}
+
+function generarTablaDinamica(identificador, padre) {
+    var contenedor = document.getElementById(padre);
+    var tabla = generarTabla(identificador);
+    for (var i = 0; i < filaColores.length; i++) {
+        var fila = generarFila("fil" + i);
+        for (var j = 0; j < columnaFiguras.length; j++) {
+            var columna = generarColumna("col" + i + j, columnaFiguras[j] + " " + filaColores[i]);
+            insertarHijo(fila, columna);
         }
-
-        tabla.appendChild(fila);
+        insertarHijo(tabla, fila);
     }
-    //document.write(tabla.innerHTML);
-    //tabla.setAttribute("border", "2");
-    
-    debugger;
-    var contenedor = document.getElementById("divPrincipal");
-    contenedor.appendChild(tabla);
+    insertarHijo(contenedor, tabla);
+}
 
+function insertarHijo(padre, hijo) {
+    padre.appendChild(hijo);
+}
+
+function generarTabla(identificador) {
+    tabla = document.createElement("table");
+    tabla.id = identificador;
+    return tabla;
+}
+
+function generarColumna(identificador, contenidoHtml) {
+    var columna = document.createElement("td");
+    columna.id = identificador;
+    columna.innerHTML = contenidoHtml;
+    return columna;
+}
+
+function generarFila(identificador){
+    var fila = document.createElement("tr");
+    fila.id = identificador;
+    return fila;
+}
+
+function pintarBordesTabla(identificador) {
+    var tabla = document.getElementById(identificador);
+    tabla.border = 1;
+    tabla.style.border = PX1_SOLID_RED;
 }
