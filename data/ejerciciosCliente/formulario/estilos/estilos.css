@@ -1,0 +1,183 @@
+/*div{
+    border: 1px solid black;
+}
+
+span{
+border: 1px solid red;
+
+}
+
+.componente{
+    border: 1px solid blue;
+
+}
+*/
+
+/*SOMBREADO*/
+.sombreado {
+    border: 1px solid black;
+    box-shadow: 0 2px 4px lightgrey;
+}
+
+.redondeado {
+    border-radius: 6px 6px 6px 6px;
+    overflow: hidden;
+}
+
+
+#cabecera {
+    background-color: white;
+    height: 20%;
+
+}
+
+#cuerpo {
+    text-align: center;
+    background-color: white;
+    height: 60%;
+
+
+}
+
+#pie {
+    height: 20%;
+    color: red;
+}
+
+.contenido {
+    display: block;
+    /*Va a determinar la forma en la que se visualizan los elementos*/
+    background-color: white;
+    /*height: 200px;*/
+    /*height: 100%;*/
+    width: 400px;
+    margin: auto;
+    padding: center;
+    text-align: center;
+}
+
+.tituloContenido {
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    color: darkblue;
+}
+
+/*componenteText*/
+.componenteText {
+    height: 50px;
+    width: 400px;
+    padding-top: 5px;
+
+}
+
+/*El identificador es para js no css sustituye a cmpNombreEtiqueta*/
+/*cmp seran identificadores unicos de objetos
+compponente será identificador de clase*/
+.componenteTextEtiqueta {
+    display: block;
+    width: 97%;
+    /*text-align: left;*/
+    text-align: center;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+.componenteTextTexto {
+    display: block;
+    width: 95%;
+    margin: auto;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+/*componenteText*/
+
+/*componenteLista*/
+.componenteLista {
+    height: 50px;
+    width: 400px;
+    padding-top: 5px;
+}
+
+.componenteListaEtiqueta {
+    display: block;
+    width: 97%;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 10px;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 16px;
+
+
+}
+
+.componenteListaTexto {
+    display: block;
+    width: 95%;
+    margin: auto;
+    font-size: 14px;
+}
+
+/*componenteLista*/
+/*componenteULista*/
+.componenteULista {
+    width: 400px;
+    padding-top: 5px;
+
+}
+
+.componenteUListaEtiqueta {
+    display: block;
+    width: 97%;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 16px;
+
+
+}
+
+.componenteUListaTexto {
+    margin: auto;
+    font-family: Helvetica;
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+/*componenteULista*/
+/*Botonera*/
+.botonera {
+    display: block;
+    width: 95%;
+    margin: auto;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+}
+
+input[type=button] {
+    width: 80px;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/*Botonera*/
+
+
+/*Para probar en el Js*/
+.modificado {
+    color: aqua !important;
+    font-weight: bold !important;
+}

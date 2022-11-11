@@ -85,3 +85,13 @@ El aceso a cada uno de los hijos se hace en un array.
 * lastChild[] nos va a devolver el ultimo hijo o valor null si no lo encuentra
 * nextSibling devuelve el siguiente nodo hermano del elemento o valor nulo si es el ultimo.
 * previousSibling: Nos va a devolver el anterior nodo hermano del elemento o valor nulo si es el primero.
+
+## Funciones matematicas
+### Metodos estaticos
+    console.log("valor de PI: Math.PI"+Math.PI);
+    console.log("valor de absoluto de -1: Math.abs(-1)"+Math.abs(-1));
+    console.log("valor de un numero redondeado:                  Math.floor(2.7)"+Math.FLOOR(2.7));
+    console.log("valor de numero redondeado Math.round(2.7)"+Math.round(2.7));
+    console.log("valor minimo de varios numeros Math.min(2,7,1)"+Math.min(2,7,1));
+    console.log("valor maximo de varios numeros Math.max(2,7,1)"+Math.max(2,7,1));
+    

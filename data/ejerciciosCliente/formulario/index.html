@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion css</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="estilos/estilos.css" type="text/css">
+    <script languaje="javascript" src="scripts/controlador.js"></script>
+</head>
+
+<body onload="main()">
+    <div id="cabecera">Cabecera</div>
+    <div id="cuerpo">
+        <div id="contenido1">
+
+            <form id="frmDatos" name="datos" method="POST">
+            <div class="contenido sombreado redondeado">
+                <span class="tituloContenido">Formulario datos</span>
+                <div id="cmpNombre" class="componenteText componente">
+                    <span id="cmpNombreEtiqueta" class="componenteTextEtiqueta">Nombre</span>
+                    <input type="text" id="cmpNombreTxt" class="componenteTextTexto">
+
+                </div>
+
+                <!--Apellido-->
+                <div id="cmpApellido" class="componenteText componente">
+                    <span id="cmpApellidoEtiqueta" class="componenteTextEtiqueta">Apellido</span>
+                    <input type="text" id="cmpApellidoTxt" class="componenteTextTexto">
+
+                </div>
+
+                <div id="cmpApellido2" class="componenteText componente">
+                    <span id="cmpApellido2Etiqueta" class="componenteTextEtiqueta">Apellido 2</span>
+                    <input type="text" id="cmpApellido2Txt" class="componenteTextTexto">
+                </div>
+
+                <div id="cmpDireccion" class="componenteText componente">
+                    <span id="cmpDireccionEtiqueta" class="componenteTextEtiqueta">Direccion</span>
+                    <input type="text" id="cmpDirecciopnTxt" class="componenteTextTexto">
+                </div>
+
+                <div id="cmpCiudad" class="componenteText componente">
+                    <span id="cmpCiudadEtiqueta" class="componenteTextEtiqueta">Ciudad</span>
+                    <input type="text" id="cmpCiudadTxt" class="componenteTextTexto">
+                </div>
+
+
+                <!--
+                componenteLista
+                componenteListaEtiqueta
+            -->
+                <div class="componenteLista componente">
+                    <span class="componenteListaEtiqueta">Lista provincias </span>
+                    <select class="componenteListaTexto" name="opciones" id="">
+                        <option value="">-</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Huesca" selected>Huesca</option>
+                        <option value="Teruel">Teruel</option>
+                    </select>
+                </div>
+                <!--Botonera-->
+                <div class="botonera">
+                    <input type="button" id="btnOk" value="Ok" onclick="btnOk_onClick()">
+                    <input type="button" id="btnCancel" value="Cancel" onclick="btnCancel_onClick()">
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+        <div id="contenido2">
+
+
+            <div class="contenido sombreado redondeado">
+                <span class="tituloContenido">Listas</span>
+                <div id="cmpListaListas" class="componenteText componente">
+                    <span id="cmpListaEtiqueta" class="componenteTextEtiqueta">Lista</span>
+                    <input type="text" id="cmpListaTxt" class="componenteTextTexto">
+
+                </div>
+
+                <!--Apellido-->
+                <div id="cmpApellido" class="componenteText componente">
+                    <span id="cmpApellidoEtiqueta" class="componenteTextEtiqueta">Apellido</span>
+                    <input type="text" id="cmpApellidoTxt" class="componenteTextTexto">
+
+                </div>
+
+                <div id="cmpApellido2" class="componenteText componente">
+                    <span id="cmpApellido2Etiqueta" class="componenteTextEtiqueta">Apellido 2</span>
+                    <input type="text" id="cmpApellido2Txt" class="componenteTextTexto">
+                </div>
+
+                <div id="cmpDireccion" class="componenteText componente">
+                    <span id="cmpDireccionEtiqueta" class="componenteTextEtiqueta">Direccion</span>
+                    <input type="text" id="cmpDirecciopnTxt" class="componenteTextTexto">
+                </div>
+
+                <div id="cmpCiudad" class="componenteText componente">
+                    <span id="cmpCiudadEtiqueta" class="componenteTextEtiqueta">Ciudad</span>
+                    <input type="text" id="cmpCiudadTxt" class="componenteTextTexto">
+                </div>
+
+
+                <!--
+                    componenteLista
+                    componenteListaEtiqueta
+                -->
+                <div class="componenteLista componente">
+                    <span class="componenteListaEtiqueta">Lista provincias </span>
+                    <select class="cmpSelectProvinciasListas" class="componenteListaTexto" name="opciones" id="">
+                        <option value="">-</option>
+                        <option value="Zaragoza">Zaragoza</option>
+                        <option value="Huesca" selected>Huesca</option>
+                        <option value="Teruel">Teruel</option>
+                    </select>
+                </div>
+
+
+                <div class="componenteULista componente">
+                    <span class="componenteUListaEtiqueta">Lista desordenada</span>
+                    <ul class="componenteUListaTexto">
+                        <li id="item1">Elemento primero</li>
+                        <li id="item2">Elemento segundo</li>
+
+                    </ul>
+                </div>
+                <!--Botonera-->
+                <div class="botonera">
+                    <input type="button" id="btnAddClass" value="Añadir" onclick="btnAddClass_onClick()">
+                    <input type="button" id="btnRemoveClass" value="Eliminar" onclick="btnRemoveClass_onClick()">
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="contenido3">
+            <div class="contenido sombreado redondeado">
+                <span class="tituloContenido">Elementos básicos html</span>
+                <div class="componente">
+                    <span class="componenteListaEtiqueta">Listado Opciones</span>
+                    <select  class="componenteListaTexto" id="lista" >  
+                      <option> - </option>  
+                      <option value="Zaragoza" selected> Zaragoza </option>  
+                      <option value="Huesca" > Huesca </option>  
+                      <option value="Teruel"> Teruel </option>  
+                    </select>  
+                </div>
+
+                <div class="componente">
+                    <span class="componenteListaEtiqueta">Listado Opciones Múltiples</span>
+                    <select class="componenteListaTexto" id="listaM" multiple>  
+                      <option> - </option>  
+                      <option value="Zaragoza" selected> Zaragoza </option>  
+                      <option value="Huesca" > Huesca </option>  
+                      <option value="Teruel"> Teruel </option>  
+                    </select>  
+                </div>
+
+                <div class="componente">
+                    <span class="componenteListaEtiqueta">Listas Desordenadas</span>
+                    <ul id="ulDesordenadas">
+                        <li id="ulLi1"> Valor 1</li>
+                        <li id="ulLi2"> Valor 2</li>
+                    </ul>  
+                </div>
+
+                <div class="componente">
+                    <span class="componenteListaEtiqueta">Listas Ordenadas</span>
+                    <ol id="ulOrdenadas">
+                        <li id="olLi1"> Valor 1</li>
+                        <li id="olLi2"> Valor 2</li>
+                    </ol>  
+                </div>
+
+                <div class="componente">
+                    <span class="componenteListaEtiqueta">Tablas</span>
+                    <table id="tabla1" border="1" style="width: 100%;">
+                        <tr id="tr1">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr id="tr2">
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="componente">
+                        <span id="cmpNombrEtiqueta" class="componenteTextEtiqueta">Texto</span>
+                        <input id="cmpTxt" class="componenteTextTexto" type="text"/>
+                    </div>
+
+                    <div class="componente">
+                        <span id="cmpNombrEtiqueta" class="componenteTextEtiqueta">Password</span>
+                        <input id="cmpPass" class="componenteTextTexto" type="password" value="mi contraseña"/>
+                    </div>
+
+                    <div class="componente">
+                        <span id="cmpNombrEtiqueta" class="componenteTextEtiqueta">Hidden</span>
+                        <input id="cmpHidden" type="hidden" value="mi valor oculto"/>
+                    </div>
+
+                    <div class="componente">
+                        <span id="cmpNombrEtiqueta" class="componenteTextEtiqueta">TextArea</span>
+                        <textarea id="txtArea1" name="" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="componente">
+                        <!--atributo name es compartido por todos los elementos comunes-->
+                        <span class="componenteTextEtiqueta">Radio button</span>
+                        <input type="radio" id="html" name="lenguaje" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="lenguaje" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="lenguaje" value="JavaScript">
+                        <label for="javascript">JavaScript</label> 
+                    </div>
+
+                    <div class="componente">
+                        <span class="componenteTextEtiqueta">Check box</span>
+                        <label><input type="checkbox" name="miCheck" id="cbox1" value="primer_checkbox" checked> Este es mi primer checkbox</label><br>
+                        <label><input type="checkbox" name="miCheck" id="cbox2" value="Segundo_checkbox"> Este es mi segundo checkbox</label><br>
+                    </div>
+                    <div class="componente">
+                        <span class="componenteTextEtiqueta">hipervínculos</span>
+                            <a href="miPagina.html">Esto es un enlace a una página externa</a>
+                            <br>
+                    </div>
+
+                <div class="botonera">
+                    <input type="button" id="btnOk" value="Ok" onclick="btnOk_onClick()" />
+                    <input type="button" id="btnCancel" value="Cancel"onclick="btnCancel_onClick()"/>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div id="pie">pie</div>
+
+</body>
+
+</html>
