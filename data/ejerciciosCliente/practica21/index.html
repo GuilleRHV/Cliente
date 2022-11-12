@@ -7,14 +7,18 @@
     <script languaje="javascript" src="index.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="main()">
+    <div id="contPrincipal">
+    </div>
     <form name="datos" method="post">
+        <label for="">Peso</label>
+        <p><input type="text" name="peso"></p>
         <label for="">Altura</label>
         <p><input type="text" name="altura"></p>
-        <label for="">Peso</label>
-        <p><input type="text" name="peso" id=""></p>
         <input type="button" value="Enviar" onclick="enviar()">
     </form>
-    
+    <p id="respuesta"></p>
+
+
 </body>
 </html>
