@@ -4,7 +4,12 @@ function main() {
     
     contenedor = document.getElementById("contPrincipal");
     espacio = document.createElement("div");
-    for (var h = 7; h <= 21; h++) {
+    
+    semana = ["lunes","martes","miercoles","jueves","viernes","sabado"];
+    for (var h = 0; h <6; h++) {
+       var dia = document.createElement("h3");
+        dia.innerHTML=semana[h];
+       contenedor.appendChild(dia);
         crearTabla();
 
     }
@@ -15,13 +20,14 @@ function main() {
 
 function crearTabla() {
 
-    ar8=["pilates","pesas","spinning","estiramientos","boxeo","yoga","descanso"];
+    ar8=["pilates","pesas","spinning","estiramientos","boxeo","yoga","descanso","meditacion"];
     var cont=0;
     
     contenedor = document.getElementById("contPrincipal");
     
     tabla = document.createElement("table");
     tabla.border = 1;
+    tabla.id = "tabla";
     for (var h = 7; h <= 21; h++) {
 
         if (h % 2 != 0) {
