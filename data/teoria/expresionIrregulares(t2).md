@@ -61,3 +61,4 @@ Va a determinar el numero de veces el patron de busqueda
 *Encuentra 0 o N caracteres previos y si lo encuentra sigue buscando
 +encuentra  1 o N caracteres previos
 ?Encuentra 0 o 1 caracter previos y cuando lo encuentra deja de buscar
+{n} Encuentrea el caracter que le precede el nº de vedes determinado por en caracter n    a{3} ej--> aaa    NO->aaia   SI->iaaa
