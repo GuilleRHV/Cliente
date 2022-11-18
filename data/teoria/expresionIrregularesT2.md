@@ -5,7 +5,7 @@ Tendremos 2 tipos
     Van a ir comprendidas entre 2 barras //   ej->/ab+c/
 * Funcion constructor RegExp
     const llamadaAConstructor = new RegExp('ab+c');
-Funcion test que nos va a permitir validar sy la expresion es correcta o ni, será ejecutada dentro de una cadena de busqueda. 
+Funcion test que nos va a permitir validar y la expresion es correcta o ni, será ejecutada dentro de una cadena de busqueda. 
 Funcion match se va a encargar de devolver los resultados obtenidos al cruzar el patrón de busqueda en la cadena pasada.
 
 var cadena = "Mi cadena de prueba"
@@ -58,7 +58,14 @@ formato = /([0-9]-([A-Z])/    ej->3Z,5D...
 ## CUANTIFICADORES
 Va a determinar el numero de veces el patron de busqueda 
 
-*Encuentra 0 o N caracteres previos y si lo encuentra sigue buscando
-+encuentra  1 o N caracteres previos
-?Encuentra 0 o 1 caracter previos y cuando lo encuentra deja de buscar
-{n} Encuentrea el caracter que le precede el nº de vedes determinado por en caracter n    a{3} ej--> aaa    NO->aaia   SI->iaaa
+* *Encuentra 0 o N caracteres previos y si lo encuentra sigue buscando
+* +encuentra  1 o N caracteres previos
+* ?Encuentra 0 o 1 caracter previos y cuando lo encuentra deja de buscar
+* {n} Encuentrea el caracter que le precede el nº de vedes determinado por en caracter n    a{3} ej--> aaa    NO->aaia   SI->iaaa
+* {n,m} Va a encontrar el caracter que le precede el numero de veces predeterminado por n hasta un maximo de m veces
+
+## FLAGS O BANDERAS
+Podremos ademas usar banderas para dar comandos dentro de la busqueda por ejemplo la bandera _g(global)_ nos permite hacer una busqueda globar dentro del patrón teniendo además la particularidad de devolver todas las cadenas que cumplen la regla en el uso de la funcion Match. Que usaremos asignandola fuera de la 2ª barra -> formato = /[0-9]+/g
+Bandera _i-> IgnoreCase_
+
+
