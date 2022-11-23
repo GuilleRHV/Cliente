@@ -23,3 +23,5 @@ Va a ser el elemnto asociado al evento que sera responsable de disparar el event
 Event listener: escucha el evento
 El evento necesita ser atado al elemento y para ello generamos en html un atributo/valor donde el att es el elemento precedido de un On que esta siendo ligado al elemento.
 El elemento sera el manejador del evento.
+
+La utilizacion de los elementos en Js se construlle con la utilizacion del prefijo On seguido del nombre del elemento.
