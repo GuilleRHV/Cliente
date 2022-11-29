@@ -94,10 +94,10 @@ Va a ser el encargado de producir una representación visual del recurso obtenid
 PARTES DE NAVEGADORES
 	Motor render
 		Motores más comunes:
-	Gecko (Mozilla)
-	Trident (Explorer)
-	Webkit (Safari)
-	Blink (Opera, Edege, Chrome)
+*	Gecko (Mozilla)
+*	Trident (Explorer)
+*	Webkit (Safari)
+*	Blink (Opera, Edege, Chrome)
 	Ç
 
 SISTEMA DE COMUNICACIONES
@@ -130,12 +130,12 @@ Sesion>Ventana>Abrir>Cerramos.
 
 IDENTIFICACION DE RECURSOS
 Uso de la barra de direcciones. 
-	URI: Universal Resource Identifier. Es una cadena de caracteres que identifica un recurso, ya sea usando una dirección, un nombre o ambos al mismo tiempo, de forma que un URI podrá contener un URL o URN al mismo tiempo.
-	URL: Uniform Resource Locator, es una cadena de caracteres que hace referencia a una dirección, va ser la forma más usada de localizar recursos en web (www.gmail.com).
+*	URI: Universal Resource Identifier. Es una cadena de caracteres que identifica un recurso, ya sea usando una dirección, un nombre o ambos al mismo tiempo, de forma que un URI podrá contener un URL o URN al mismo tiempo.
+*	URL: Uniform Resource Locator, es una cadena de caracteres que hace referencia a una dirección, va ser la forma más usada de localizar recursos en web (www.gmail.com).
 
-	URN: Uniform Resource Name, va a ser el nombre único para un recurso, no obstante no va a dar ninguna información de su localización, solo lo identifica(urn:isbn:3945). 
+*	URN: Uniform Resource Name, va a ser el nombre único para un recurso, no obstante no va a dar ninguna información de su localización, solo lo identifica(urn:isbn:3945). 
 
-	ESTRUCTURA DEL URI
+*	ESTRUCTURA DEL URI
 		Esquema: parte jerárquica
 			[?] Solicitud
 			[#] Fragmento

@@ -14,7 +14,7 @@ function btnInsertarCola() {
 
 
 function btnBorrarCola() {
-    cola.shift();
+    cola.pop();
     console.log(cola);
     main();
 }
@@ -50,8 +50,10 @@ function main(){
 }
 
 function mostrarpila(array){
-    //for(var i=0;i<array.length;i++){
-    for(var i=array.length;i>0;i--){
+    //En pila se resta 
+    //for(var i=array.length;i>0;i--){
+    for(var i=0;i<array.length;i++){
+    
         console.log(array[i]+ ", ");
         //pintardatp(arraypila,i);
     }
