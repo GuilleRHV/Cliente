@@ -44,13 +44,15 @@ function main(){
     })
     document.getElementById("espacio").innerHTML=cola;
 
-    mostrarfila(fila);
+    mostrarpila(pila);
+    //cola normal
     
 }
 
-function mostrarfila(array){
-    for(var i=pila.length;i>0;i--){
-        console.log(array[i]+ " ");
+function mostrarpila(array){
+    //for(var i=0;i<array.length;i++){
+    for(var i=array.length;i>0;i--){
+        console.log(array[i]+ ", ");
         //pintardatp(arraypila,i);
     }
 }
