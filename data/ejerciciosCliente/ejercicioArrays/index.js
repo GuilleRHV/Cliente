@@ -22,7 +22,8 @@ function btnBorrarCola() {
 
 function btnInsertarPila() {
     var texto = prompt("introduce texto");
-    pila.unshift(texto);
+  //  pila.unshift(texto);
+    pila.push(texto);
     console.log(pila);
     main();
 }
@@ -30,6 +31,7 @@ function btnInsertarPila() {
 
 function btnBorrarPila() {
     pila.shift();
+ //   pila.pop();
     console.log(pila);
     main();
 }
@@ -41,4 +43,14 @@ function main(){
        
     })
     document.getElementById("espacio").innerHTML=cola;
+
+    mostrarfila(fila);
+    
+}
+
+function mostrarfila(array){
+    for(var i=pila.length;i>0;i--){
+        console.log(array[i]+ " ");
+        //pintardatp(arraypila,i);
+    }
 }
