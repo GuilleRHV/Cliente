@@ -34,11 +34,12 @@ function cambiarTextoEjercicio(){
     p4.style.color ="blue";
 }
 function btnEnlazarEjercicio(){
- //   document.getElementById("p4").addEventListener("onmouseover",cambiarTextoEjercicio);
-    document.getElementById("p4").onmouseover=cambiarTextoEjercicio;
+    document.getElementById("p4").addEventListener("mouseover",cambiarTextoEjercicio,false);
+  //  document.getElementById("p4").onmouseover=cambiarTextoEjercicio;
 }
 function btnDesenlazarEjercicio(){
-    document.getElementById("p4").removeEventListener("onmouseover",cambiarTextoEjercicio);
+    document.getElementById("p4").removeEventListener("mouseover",btnEnlazarEjercicio,false);
+    
 }
 //Generar un boton  k permita enlazar un parrago 2 eventos mouseover y mouseout 
 //de forma que el contenido del parrafo cambie cuando se pase el cursor sobre el parrafo
