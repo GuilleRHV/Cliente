@@ -142,6 +142,8 @@ Uso de la barra de direcciones.
 			[#] Fragmento
 __ESQUEMA__: El esquema nos va a identificar el protocolo al solicitar el recurso (http, https,ftp…).
 PARTE JERARQUICA->://usuario:contraseña@servidor:puerto/ruta
+
 __SOLICITUD__: Nos permitirá realizar consultas de información, pasando variables al solicitar el recurso, la ruta se pasará mediante el carácter separador [?].
+
 		/miServer.com/index.php?var=z&vers=valor
 __FRAGMENTO__: Nos va a identificar una subdirección dentro del recurso al que apuntamos. Va a estar separado del resto de la estructura mediante el carácter reservado [#].
