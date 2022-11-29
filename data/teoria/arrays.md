@@ -6,6 +6,8 @@
 
     var posicion = 0;
     var elementos = 2;
+
+    En la posicion 0 eliminar 1 elemento
 Eliminar posicion array (0,1) posicion
      var elementoeliminado = arrayDatos1.splice(posicion, elementos);
 
@@ -27,6 +29,7 @@ Eliminar posicion array (0,1) posicion
 * Recorrer array
     arrayDatos2.forEach(function (elemento, indice, array) {
         console.log(elemento, indice)
+        //array[indice]=elemento;
         }
     );
 

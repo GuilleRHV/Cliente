@@ -1,9 +1,9 @@
-function enviar() {
+function enviar2() {
 
-    enviarDatos();
+    enviarDatos2();
 }
 
-function enviarDatos() {
+function enviarDatos2() {
 
    
 
@@ -49,7 +49,7 @@ function crearFila(contenido) {
 }
 
 function main(){
-    contenedor = document.getElementById("contPrincipal");
+    contenedor2 = document.getElementById("contPrincipal2");
 
 
     tabla = document.createElement("table");
@@ -104,5 +104,5 @@ function main(){
 
     //  elh1.appendChild(tr);
 
-    contenedor.appendChild(tabla);
+    contenedor2.appendChild(tabla);
 }
