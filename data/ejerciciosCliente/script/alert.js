@@ -28,6 +28,12 @@ function mifuncion(){
        l=l+arr[i]+", " ;
     }
     console.log("Array For normal: "+l);
+    l="";
+    arr.push("prueba");
+    for(var i=arr.length-1;i>=0;i--){
+        l=l+arr[i]+", " ;
+     }
+    console.log("Array For normal: "+l);
     alert("El de mayor longitud es: "+long);
     alert("Max arr2: "+Math.max(arr2));
     alert("Posicion tres: "+arr1.indexOf("tres"));

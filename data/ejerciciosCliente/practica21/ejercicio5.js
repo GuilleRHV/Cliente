@@ -7,7 +7,8 @@ function enviar5(){
   // alert("El valor de peso es: "+formulario.peso.value);
     
 
-   // var resultado = password.match("(?=.*[-,_])(?=.*[a-z])(?=.*[A-Z]){4,8}");
+  //var resultado5 = password.match(/^[A-Z]+$/g);
+    //var resultado5 = password.match(/^([s-z])([a-c]{1,3})(\s)([A-Z]$)/g);
     var resultado5 = password.match(/([0-9]?)([a-z]+)([A-Z]$)/);
     if(resultado5){
         alert("Es valido");
