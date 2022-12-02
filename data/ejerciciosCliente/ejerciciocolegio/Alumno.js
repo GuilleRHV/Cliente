@@ -4,7 +4,7 @@ class Alumno{
     nombre="";
     media="";
 
-    function Alumno(dni,nombre,media) {
+    Function Alumno(dni,nombre,media) {
         
     }
 /*constructor(dni,nombre,media){

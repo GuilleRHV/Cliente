@@ -49,6 +49,24 @@ alert(this.nombre.mom
 Aparte de usar los prototupos para heradd funcionalidades de los objetos que hereden caract comines .
 A la hora de aplicacar la herenca
 
-la mayor especifidad del objeto creado ejemplo de objeto heredado, la clase padre va a ser la clase persona heredada previamente, aparte heredadermos una clase profesor que es mas especifica que la persona y que va a heredar la propiedades comunes de persona. Y generaremos ademas un attbo especifico para el profesor
+la mayor especifidad del objeto creado ejemplo de objeto heredado, la clase padre va a ser la clase persona heredada previamente, aparte heredadermos una clase profesor que es mas especifica que la persona y que va a heredar la propiedades comunes de persona. Y generaremos ademas un attbo especifico para el profesor. 
  
+
+function profesor
+(nom,ape,materia){
+persona.call(this,
+
+
+vamos a generar un metodo especifico para la clase profesor y vamos a redefinir la funcion despedida segun las necesidades de la clase heredada
+
+
+
+
+
+profesor.prototype.despedida = function{
+alert(this.
+
+
+
+
 
