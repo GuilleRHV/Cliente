@@ -10,18 +10,16 @@ function enviarDatos2() {
       formulario = document.forms.datos;
         edad = formulario.edad.value;
         sexo =formulario.sexo.value;
-     //  alert("El valor de altura es: "+formulario.altura.value);
-      // alert("El valor de peso es: "+formulario.peso.value);
         if(sexo=="hombre"){
             fcm = 220 - edad;
         }else if(sexo=="mujer"){
             fcm = 226 - edad;
         }
         document.getElementById("respuesta").innerHTML="FCM: "+fcm;
-        document.getElementById("recuperacion").innerHTML="Recuperacion: "+fcm*0.6+"-"+fcm*0.7;
-        document.getElementById("aerobica").innerHTML="Aerobica: "+fcm*0.7+"-"+fcm*0.8;
-        document.getElementById("anaerobica").innerHTML="Anaerobica: "+fcm*0.8+"-"+fcm*0.9;
-        document.getElementById("linearoja").innerHTML="Linea roja: "+fcm*0.9+"-"+fcm;
+        document.getElementById("recuperacion").innerHTML="Recuperacion: "+Math.round(fcm*0.6,2)+"-"+Math.round(fcm*0.7,2);
+        document.getElementById("aerobica").innerHTML="Aerobica: "+Math.round(fcm*0.7,2)+"-"+Math.round(fcm*0.8,2);
+        document.getElementById("anaerobica").innerHTML="Anaerobica: "+Math.round(fcm*0.8,2)+"-"+Math.round(fcm*0.9,2);
+        document.getElementById("linearoja").innerHTML="Linea roja: "+Math.round(fcm*0.9,2)+"-"+Math.round(fcm,2);
         alert("Tu fcm es de "+fcm);
 
       // document.write("IMC: "+imc)

@@ -3,13 +3,14 @@ function enviar5(){
     formulario5 = document.forms.datos5;
     var password = formulario5.password.value;
 
- //  alert("El valor de altura es: "+formulario.altura.value);
-  // alert("El valor de peso es: "+formulario.peso.value);
-    
-
-  //var resultado5 = password.match(/^[A-Z]+$/g);
-    //var resultado5 = password.match(/^([s-z])([a-c]{1,3})(\s)([A-Z]$)/g);
-    var resultado5 = password.match(/([0-9]?)([a-z]+)([A-Z]$)/);
+ /*
+ 8-16 char {8,16}
+ 1 mayuscula [A-Z]
+ 1 minuscula [a-z]
+ 1 numero [0-9]
+ 1 no alfanumerico \W
+ */ 
+    var resultado5 = password.match(/(?=.*\W+){8,16}(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])/);
     if(resultado5){
         alert("Es valido");
     }else{
