@@ -1,67 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script languaje="javascript" src="index.js"></script>
-    <title>Document</title>
+    <script languaje="javascript" src="horario.js"></script>
+    <title>Ejercicio 3 y 4</title>
 </head>
+
 <body onload="main()">
-    <div id="contPrincipal">
-    </div>
-    <form name="datos" method="post">
-        <label for="">Peso</label>
-        <p><input type="text" name="peso"></p>
-        <label for="">Altura</label>
-        <p><input type="text" name="altura"></p>
-        <input type="button" value="Enviar" onclick="enviar()">
-    </form>
-    <p id="respuesta1"></p>
-
-<hr>
-
-
-    <div id="contPrincipal2">
-    </div>
-    <form name="datos2" method="post">
-        <label for="">Sexo</label>
-        <select name="sexo" id="">
-            <option value="hombre" selected>Hombre</option>
-            <option value="mujer">Mujer</option>
-        </select>
-        <label for="">Edad</label>
-        <p><input type="text" name="edad"></p>
-        <input type="button" value="Enviar" onclick="enviar2()">
-    </form>
-    <p id="respuesta">
-
-    </p>
-    <p id="recuperacion">
-
-    </p>
-    <p id="aerobica">
-
-    </p>
-    <p id="anaerobica">
-
-    </p>
-    <p id="linearoja">
-
-    </p>
-
-    <hr>
-
-    <div id="contPrincipal5">
-        <form name="datos5" method="post">
-        
-            <label for="">Contraseña</label>
-            <p><input type="text" name="password"></p>
-            <input type="button" value="Enviar" onclick="enviar5()">
-        </form>
-    </div>
-
-
+    <h1>Ejercicio 3 y 4</h1>
+    <!--Tabla actividades-->
     <h1>Actividades</h1>
     <table border="1" id="tablaact">
         <tr>
@@ -73,7 +23,6 @@
             <td>Viernes</td>
             <td>Sabado</td>
         </tr>
-
         <tr id="ac1">
             <td>7:00-9:00</td>
         </tr>
@@ -98,23 +47,21 @@
         <tr id="ac8">
             <td>21:00-23:00</td>
         </tr>
-      
     </table>
-
+    <!--Checkbox actividades-->
     <form name="formact" id="formact">
-      
-         
-         <input type="checkbox" name="act" value="pilates">pilates<br>
-         <input type="checkbox" name="act" value="pesas">pesas<br>
-         <input type="checkbox" name="act" value="spinning">spinning<br>
-         <input type="checkbox" name="act" value="estiramientos">estiramientos<br>
-         <input type="checkbox" name="act" value="boxeo">boxeo<br>
-         <input type="checkbox" name="act" value="yoga">yoga<br>
-       
-         <input type="button" value="enviar" onclick="enviaractividad()">
-     </form>
+        <input type="checkbox" name="act" value="pilates">pilates<br>
+        <input type="checkbox" name="act" value="pesas">pesas<br>
+        <input type="checkbox" name="act" value="spinning">spinning<br>
+        <input type="checkbox" name="act" value="estiramientos">estiramientos<br>
+        <input type="checkbox" name="act" value="boxeo">boxeo<br>
+        <input type="checkbox" name="act" value="yoga">yoga<br>
+        <input type="checkbox" name="act" value="descanso">descanso<br>
 
+        <input type="button" value="enviar" onclick="enviaractividad()">
+    </form>
 
+    <!--Tabla fisios-->
     <h1>Fisios</h1>
     <table border="1" id="tablafisio">
         <tr>
@@ -157,9 +104,8 @@
             <td>20:00-20:45</td>
         </tr>
     </table>
-   
+    <!--Checkbox fisios-->
     <form name="formfisio" id="formfisio">
-    
         <input type="checkbox" name="fisio" value="Andrea">Andrea<br>
         <input type="checkbox" name="fisio" value="Jose">Jose<br>
         <input type="checkbox" name="fisio" value="Pedro">Pedro<br>
@@ -172,7 +118,6 @@
 
 
 
-
-
 </body>
+
 </html>

@@ -20,7 +20,7 @@ function enviarDatos2() {
         document.getElementById("aerobica").innerHTML="Aerobica: "+Math.round(fcm*0.7,2)+"-"+Math.round(fcm*0.8,2);
         document.getElementById("anaerobica").innerHTML="Anaerobica: "+Math.round(fcm*0.8,2)+"-"+Math.round(fcm*0.9,2);
         document.getElementById("linearoja").innerHTML="Linea roja: "+Math.round(fcm*0.9,2)+"-"+Math.round(fcm,2);
-        alert("Tu fcm es de "+fcm);
+      
 
       // document.write("IMC: "+imc)
        

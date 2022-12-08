@@ -36,7 +36,6 @@ function enviarfisio() {
     for (var i = 0; i < persona.length; i++) {
         if (persona[i].checked == true) {
             mostrar = persona[i].value;
-            alert(persona[i].value);
         }
     }
     //Ahora pintamos
@@ -59,7 +58,7 @@ function enviaractividad() {
     for (var i = 0; i < actividad.length; i++) {
         if (actividad[i].checked == true) {
             mostrar = actividad[i].value;
-            alert(actividad[i].value);
+       
         }
     }
     //Ahora pintamos
