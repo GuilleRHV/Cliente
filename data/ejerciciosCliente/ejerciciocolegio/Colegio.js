@@ -1,4 +1,4 @@
-class Colegio{
+class Colegio extends Alumno{
     
      nombre = "";
     numeroaulas="";
