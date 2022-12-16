@@ -1,31 +1,35 @@
-class Alumno{
+class Alumno {
 
-    dni="";
-    nombre="";
-    media="";
+   dni = "";
+   nombre = "";
+   media = "";
 
-     constructor(dni,nombre,media) {
-        this.dni=dni;
-        this.nombre=nombre;
-        this.media=media;
-    }
+   constructor(dni, nombre, media) {
+      this.dni = dni;
+      this.nombre = nombre;
+      this.media = media;
+   }
 
- set media(n){
-    this.media=n;
- }
+   setmedia(n) {
+      this.media = n;
+   }
 
-get media(){
-    return this.media;
- }
+   getmedia() {
+      return this.media;
+   }
 
- //alert("Dni: " + this.dni + " nombre: " + this.nombre+ 
+   //alert("Dni: " + this.dni + " nombre: " + this.nombre+ 
 
-  modificarNumeroAlumnos(num) {
-    
- }
+   modificarNumeroAlumnos(num) {
+
+   }
 }
 
- function main(){
-    per = new Alumno("123","Pepe",5);
-    console.log(per.media);
+function main() {
+   per = new Alumno("123", "Pepe", 5);
+   console.log("Antes de modificar: "+per.media);
+   var modificarmedia = prompt("Introduce nueva media de " + per.nombre);
+   per.setmedia(modificarmedia);
+
+   console.log("Despues de modificar: "+per.media);
 }

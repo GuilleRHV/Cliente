@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Aeropuerto.js"></script>
+    <title>Aeropuerto</title>
+</head>
+
+<body onload="main()">
+    <h2>Crear aeropuerto</h2>
+    <label for="">Nombre aeropuerto</label></p>
+    <p><input type="text" id="nombreaeropuerto"></p>
+    <label for="">Ciudad aeropuerto</label></p>
+    <p><input type="text" id="ciudad"></p>
+    <label for="">Numero vuelos</label></p>
+    <p><input type="text" id="nvuelos"></p>
+    <input type="button" value="Enviar" onclick="crearAeropuerto()">
+
+    <hr>
+
+    <h4>Crear vuelo</h4>
+    <p><label for=""> Codigo</label></p>
+    <p><input type="text" id="codigo"></p>
+    <p><label for="">Hora salida</label></p>
+    <p><input type="text" id="hor">:<input type="text" name="" id="min"></p>
+
+    
+    <label for="">Hora llegada</label></p>
+    <p><input type="text" id="hor2">:<input type="text" name="" id="min2"></p>
+    <input type="button" value="Enviar" onclick="calcular()">
+
+</body>
+
+</html>

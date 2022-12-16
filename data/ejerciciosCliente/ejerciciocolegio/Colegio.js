@@ -6,7 +6,7 @@ class Colegio extends Alumno{
 
 
 
-    set setNumeroAlumnos(n) {
+     setNumeroAlumnos(n) {
         this.numeroalumnos=n;
     }
 
