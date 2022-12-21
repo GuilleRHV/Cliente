@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticias>
+    <noticia>
+        <titulo>Noticia 1</titulo>
+        <cuerpo>Este es el cuerpo de la n1</cuerpo>
+    </noticia>
+     <noticia>
+        <titulo>Noticia 2</titulo>
+        <cuerpo>Este es el cuerpo de la n1</cuerpo>
+    </noticia>
+     <noticia>
+        <titulo>Noticia 3</titulo>
+        <cuerpo>Este es el cuerpo de la n1</cuerpo>
+    </noticia>
+</noticias>

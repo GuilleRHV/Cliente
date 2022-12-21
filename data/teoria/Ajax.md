@@ -39,6 +39,19 @@ Metodos:
 * __send()__: envia la peticion al servidor que dependiendo la configuracion del metodo open sera pasada por POST o GET.
 
 ###Propiedades importantes del objeto XMLHttpRequest
-* onreadystatechange: Nos va a definir la funcion que es llamada ("callback") 
-* readystate: El estado de disponible.
+* __onreadystatechange__: Nos va a definir la funcion que es llamada ("callback") 
+* __readystate__: El estado de disponible.
+0. Peticion no iniciada 
+1. Peticion restablecida con el servidor
+2. Peticion recibida
+3. Procesando solicitud
+4. Solicitud acabada y respuesta
+5. 
+
+* __responsetext__:
+* __responsexml__: Va a devolver la indormacion den formato xml 
+* __status__: Devuelve el estado de la solicitud
+    200: OK
+    403: Prohibido
+    404: Not found 
 
