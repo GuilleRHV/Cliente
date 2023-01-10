@@ -9,10 +9,17 @@
     </colegio>
     <colegio>
     <nombre>IES Santiago Hernandez</nombre>
-    <direccion>Delc</direccion>
-    <localidad>Zaragoza</localidad>
-    <numeroAlumnos>1600</numeroAlumnos>
-    <numeroAulas>30</numeroAulas>
-</colegio>
+        <direccion>Delc</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>1600</numeroAlumnos>
+        <numeroAulas>30</numeroAulas>
+    </colegio>
+    <colegio>
+        <nombre>IES Pilar Lorengar</nombre>
+        <direccion>La jota</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>1900</numeroAlumnos>
+        <numeroAulas>40</numeroAulas>
+    </colegio>
 
 </colegios>
