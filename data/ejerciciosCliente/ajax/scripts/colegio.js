@@ -24,7 +24,7 @@ function lanzarPeticionAsincrona() {
     //Asignamos funcion al evento readystate
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("contenedor").innerHTML = this.responseText;
+            //document.getElementById("contenedor").innerHTML = this.responseText;
             var varxml = this.responseXML;
             var colegio = varxml.getElementsByTagName("colegio");
 

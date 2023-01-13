@@ -21,5 +21,11 @@
         <numeroAlumnos>1900</numeroAlumnos>
         <numeroAulas>40</numeroAulas>
     </colegio>
-
+    <colegio>
+        <nombre>Agustinos</nombre>
+        <direccion>Romd</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>2300</numeroAlumnos>
+        <numeroAulas>50</numeroAulas>
+    </colegio>
 </colegios>
