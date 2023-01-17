@@ -1,6 +1,8 @@
-var arrayclaseColegios; 
+var arrayclaseColegios;
+var cambio = false;
+var longitudArrayDatos;
 function lanzarPeticionAsincrona() {
-     arrayclaseColegios = new Colegios();
+    arrayclaseColegios = new Colegios();
     //Generamos objeto
     var xhttp = new XMLHttpRequest();
     colegios = [];
@@ -9,10 +11,18 @@ function lanzarPeticionAsincrona() {
 
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var arrayDatos = JSON.parse(this.responseText);
+
+
+
+
+             arrayDatos = JSON.parse(this.responseText);
+            longitudArrayDatos= arrayDatos.colegio.length;
+
+
 
             tabla = document.createElement("table");
             tabla.border = 1;
+            tabla.id = "tablainicial";
 
 
 
@@ -28,7 +38,7 @@ function lanzarPeticionAsincrona() {
             tr.appendChild(d);
 
             l = document.createElement("td");
-            l.innerHTML = "localidad"; 
+            l.innerHTML = "localidad";
             nal = document.createElement("td");
             nal.innerHTML = "numero Alumnos";
             tr.appendChild(nal);
@@ -72,46 +82,22 @@ function lanzarPeticionAsincrona() {
 
 
                 tabla.appendChild(tr);
-                 cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
-
+                cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+                console.log("COLEGIO: " + cole.toString());
                 colegios.push(cole);
 
                 arrayclaseColegios.añadir(cole);
                 //arrayclaseColegios = new Colegios(colegios);
-                console.log("A");
-               // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
+
+                // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
 
                 //for(i = 0; i<arrayclaseColegios.length;i++){
-                    console.log(cole);
-                    console.log(arrayclaseColegios.arrcolegios+"*****");
-                  
-                 //   }
+                console.log("COLEGIO: " + cole);
+                console.log(arrayclaseColegios.arrcolegios + "*****");
+
+                //   }
 
             }
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
 
 
             console.log("nombre: " + nombre);
@@ -119,6 +105,18 @@ function lanzarPeticionAsincrona() {
 
             document.body.appendChild(tabla);
 
+
+            console.log("Posiciones array: " + arrayDatos.colegio.length);
+            console.log("Posiciones array clase colegios: " + arrayclaseColegios.arrcolegios.length);
+
+            if (arrayclaseColegios.length > arrayDatos.length) {
+                cambio = true;
+            }
+
+            if (cambio) {
+                var tablainicial = document.getElementById("tablainicial");
+                //tablainicial.style.display = "none";
+            }
         }
     };
 
@@ -148,24 +146,25 @@ class Colegio {
         this.numeroAulas = numeroAulas;
     }
     toString() {
-        // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
+        return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
     }
 }
 
 
 class Colegios {
-     arrcolegios = [];
+    arrcolegios = [];
 
     //El constructor añadira arrays al arrcolegios
 
     añadir(cole) {
-        
+
         this.arrcolegios.push(cole);
     }
     /*toString() {
         // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
     }*/
 }
+
 
 function enviardatos() {
     formulario = document.forms.formulario;
@@ -177,5 +176,111 @@ function enviardatos() {
     alert("Nombre: " + nombre + ", direccion: " + direccion + ", localidad: " + localidad + ", numeroAlumnos:" + numeroAlumnos + ", numeroAulas:" + numeroAulas);
     var cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
     arrayclaseColegios.añadir(cole);
+
+
+   console.log("Array clase colegios: "+arrayclaseColegios.arrcolegios.length);
+   console.log("Array clase array datos: "+longitudArrayDatos);
+
+    if (arrayclaseColegios.arrcolegios.length > longitudArrayDatos) {
+        var tablainicial = document.getElementById("tablainicial");
+        tablainicial.style.display = "none";
+
+        /********************************************************************** */
+
+
+
+        tabla = document.createElement("table");
+        tabla.border = 1;
+        tabla.id = "tablasecundaria";
+
+
+
+        tr = document.createElement("tr");
+
+
+        n = document.createElement("td");
+        n.innerHTML = "nombre"
+        tr.appendChild(n);
+
+        d = document.createElement("td");
+        d.innerHTML = "direccion"
+        tr.appendChild(d);
+
+        l = document.createElement("td");
+        l.innerHTML = "localidad";
+        nal = document.createElement("td");
+        nal.innerHTML = "numero Alumnos";
+        tr.appendChild(nal);
+
+        nau = document.createElement("td");
+        nau.innerHTML = "numero Aulas";
+        tr.appendChild(nau);
+
+        tr.style.fontWeight = "bold";
+        tabla.appendChild(tr);
+
+
+
+        //FOR
+
+        for (var i = 0; i < arrayclaseColegios.arrcolegios.length; i++) {
+
+            tr = document.createElement("tr");
+
+            var nombre = arrayclaseColegios.arrcolegios[i].nombre;
+            n = document.createElement("td");
+            n.innerHTML = nombre;
+            tr.appendChild(n);
+
+            var direccion = arrayclaseColegios.arrcolegios[i].direccion;
+            d = document.createElement("td");
+            d.innerHTML = direccion;
+            tr.appendChild(d);
+
+            var localidad = arrayclaseColegios.arrcolegios[i].localidad;;
+            l = document.createElement("td");
+            l.innerHTML = localidad;
+            tr.appendChild(l);
+
+            var numeroAlumnos = arrayclaseColegios.arrcolegios[i].numeroAlumnos;
+            nal = document.createElement("td");
+            nal.innerHTML = numeroAlumnos;
+            tr.appendChild(nal);
+
+            var numeroAulas = arrayclaseColegios.arrcolegios[i].numeroAulas;
+            nau = document.createElement("td");
+            nau.innerHTML = numeroAulas;
+            tr.appendChild(nau);
+
+
+            tabla.appendChild(tr);
+            cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+            console.log("COLEGIO: " + cole.toString());
+            colegios.push(cole);
+
+            arrayclaseColegios.añadir(cole);
+            //arrayclaseColegios = new Colegios(colegios);
+
+            // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
+
+            //for(i = 0; i<arrayclaseColegios.length;i++){
+            console.log("COLEGIO: " + cole);
+            console.log(arrayclaseColegios.arrcolegios + "*****");
+
+            //   }
+
+        }
+        document.body.appendChild(tabla);
+
+
+
+
+
+        
+    }
+
+
+
+
 
 }
