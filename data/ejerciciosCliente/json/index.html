@@ -9,7 +9,7 @@
 </head>
 <body onload="lanzarPeticionAsincrona()">
     
-    <form action="" method="post">
+    <form action="" name="formulario" method="post">
         <h3>Crear colegio</h3>
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id=""><br>
@@ -20,13 +20,13 @@
         <label for="localidad">localidad</label>
         <input type="text" name="localidad" id=""><br>
 
-        <label for="numeroalumnos">numeroalumnos</label>
-        <input type="text" name="numeroalumnos" id=""><br>
+        <label for="numeroAlumnos">numeroalumnos</label>
+        <input type="text" name="numeroAlumnos" id=""><br>
 
         <label for="numeroaulas">numeroaulas</label>
-        <input type="text" name="numeroaulas" id=""><br>
+        <input type="text" name="numeroAulas" id=""><br>
 
-        <input type="submit" value="enviar" name="enviar">
+        <input type="button" value="Enviar" onclick="enviardatos()">
        </form>
 </body>
 </html>

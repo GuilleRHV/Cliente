@@ -1,21 +1,16 @@
-function lanzarPeticionAsincrona(){
+var arrayclaseColegios; 
+function lanzarPeticionAsincrona() {
+     arrayclaseColegios = new Colegios();
     //Generamos objeto
     var xhttp = new XMLHttpRequest();
-    colegios=[];
+    colegios = [];
+
     //Asignamos funcion al evento ready statement
-    
-    xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-             var arrayDatos = JSON.parse(this.responseText);
-           
-            /* for (var i = 0; i<arrayDatos.colegio.length;i++){
-        
-                console.log(arrayDatos.colegio[i].nombre);
-              
-            }*/
 
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var arrayDatos = JSON.parse(this.responseText);
 
-            
             tabla = document.createElement("table");
             tabla.border = 1;
 
@@ -33,9 +28,7 @@ function lanzarPeticionAsincrona(){
             tr.appendChild(d);
 
             l = document.createElement("td");
-            l.innerHTML = "localidad";
-            tr.appendChild(l);
-
+            l.innerHTML = "localidad"; 
             nal = document.createElement("td");
             nal.innerHTML = "numero Alumnos";
             tr.appendChild(nal);
@@ -57,7 +50,7 @@ function lanzarPeticionAsincrona(){
                 n.innerHTML = nombre;
                 tr.appendChild(n);
 
-                var direccion =arrayDatos.colegio[i].direccion;
+                var direccion = arrayDatos.colegio[i].direccion;
                 d = document.createElement("td");
                 d.innerHTML = direccion;
                 tr.appendChild(d);
@@ -79,29 +72,62 @@ function lanzarPeticionAsincrona(){
 
 
                 tabla.appendChild(tr);
-                var cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+                 cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+
                 colegios.push(cole);
 
-                console.log(nombre+" "+direccion+" "+localidad+" "+numeroAlumnos+" "+numeroAulas);
+                arrayclaseColegios.añadir(cole);
+                //arrayclaseColegios = new Colegios(colegios);
+                console.log("A");
+               // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
+
+                //for(i = 0; i<arrayclaseColegios.length;i++){
+                    console.log(arrayclaseColegios.length+"*****");
+                  
+                 //   }
 
             }
 
+
+
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
             console.log("nombre: " + nombre);
 
 
             document.body.appendChild(tabla);
 
         }
-};
+    };
 
 
 
-//Abrimos fichero de forma asincrona
-//xhttp.open("GET","json/libros.json",true);
-xhttp.open("GET","json/colegio.json");
-//Enviamos solicitud get
-xhttp.send();
+    //Abrimos fichero de forma asincrona
+    //xhttp.open("GET","json/libros.json",true);
+    xhttp.open("GET", "json/colegio.json");
+    //Enviamos solicitud get
+    xhttp.send();
 }
 
 
@@ -121,18 +147,34 @@ class Colegio {
         this.numeroAulas = numeroAulas;
     }
     toString() {
-       // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
+        // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
     }
 }
 
 
 class Colegios {
-    colegios ="";
-    constructor(colegios) {
-        this.colegios = colegios;
-       
+     arrcolegios = [];
+
+    //El constructor añadira arrays al arrcolegios
+
+    añadir(cole) {
+        
+        this.arrcolegios.push(cole);
     }
-    toString() {
-       // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
-    }
+    /*toString() {
+        // return "Nombre: " + this.nombre + ", direccion: " + this.direccion + ", localidad: " + this.localidad + ", numeroAlumnos: " + this.numeroAlumnos + ", numeroAulas: " + this.numeroAulas + "<br>";
+    }*/
+}
+
+function enviardatos() {
+    formulario = document.forms.formulario;
+    nombre = formulario.nombre.value;
+    direccion = formulario.direccion.value;
+    localidad = formulario.localidad.value;
+    numeroAlumnos = formulario.numeroAlumnos.value;
+    numeroAulas = formulario.numeroAulas.value;
+    alert("Nombre: " + nombre + ", direccion: " + direccion + ", localidad: " + localidad + ", numeroAlumnos:" + numeroAlumnos + ", numeroAulas:" + numeroAulas);
+    var cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+    arrayclaseColegios.añadir(cole);
+
 }
