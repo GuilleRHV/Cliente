@@ -82,7 +82,8 @@ function lanzarPeticionAsincrona() {
                // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
 
                 //for(i = 0; i<arrayclaseColegios.length;i++){
-                    console.log(arrayclaseColegios.length+"*****");
+                    console.log(cole);
+                    console.log(arrayclaseColegios.arrcolegios+"*****");
                   
                  //   }
 
