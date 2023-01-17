@@ -15,8 +15,8 @@ function lanzarPeticionAsincrona() {
 
 
 
-             arrayDatos = JSON.parse(this.responseText);
-            longitudArrayDatos= arrayDatos.colegio.length;
+            arrayDatos = JSON.parse(this.responseText);
+            longitudArrayDatos = arrayDatos.colegio.length;
 
 
 
@@ -178,8 +178,8 @@ function enviardatos() {
     arrayclaseColegios.añadir(cole);
 
 
-   console.log("Array clase colegios: "+arrayclaseColegios.arrcolegios.length);
-   console.log("Array clase array datos: "+longitudArrayDatos);
+    console.log("Array clase colegios: " + arrayclaseColegios.arrcolegios.length);
+    console.log("Array clase array datos: " + longitudArrayDatos);
 
     if (arrayclaseColegios.arrcolegios.length > longitudArrayDatos) {
         var tablainicial = document.getElementById("tablainicial");
@@ -189,9 +189,9 @@ function enviardatos() {
 
 
 
-        tabla = document.createElement("table");
-        tabla.border = 1;
-        tabla.id = "tablasecundaria";
+        tablasecundaria = document.createElement("table");
+        tablasecundaria.border = 1;
+        tablasecundaria.id = "tablasecundaria";
 
 
 
@@ -199,7 +199,7 @@ function enviardatos() {
 
 
         n = document.createElement("td");
-        n.innerHTML = "nombre"
+        n.innerHTML = "nombre secundaria"
         tr.appendChild(n);
 
         d = document.createElement("td");
@@ -217,66 +217,66 @@ function enviardatos() {
         tr.appendChild(nau);
 
         tr.style.fontWeight = "bold";
-        tabla.appendChild(tr);
+        tablasecundaria.appendChild(tr);
 
 
-
+        // document.body.appendChild(tablasecundaria);
         //FOR
 
         for (var i = 0; i < arrayclaseColegios.arrcolegios.length; i++) {
 
             tr = document.createElement("tr");
 
-            var nombre = arrayclaseColegios.arrcolegios[i].nombre;
+            var nombre2 = arrayclaseColegios.arrcolegios[i].nombre;
             n = document.createElement("td");
-            n.innerHTML = nombre;
+            n.innerHTML = nombre2;
             tr.appendChild(n);
 
-            var direccion = arrayclaseColegios.arrcolegios[i].direccion;
+            var direccion2 = arrayclaseColegios.arrcolegios[i].direccion;
             d = document.createElement("td");
-            d.innerHTML = direccion;
+            d.innerHTML = direccion2;
             tr.appendChild(d);
 
-            var localidad = arrayclaseColegios.arrcolegios[i].localidad;;
+            var localidad2 = arrayclaseColegios.arrcolegios[i].localidad;;
             l = document.createElement("td");
-            l.innerHTML = localidad;
+            l.innerHTML = localidad2;
             tr.appendChild(l);
 
-            var numeroAlumnos = arrayclaseColegios.arrcolegios[i].numeroAlumnos;
+            var numeroAlumnos2 = arrayclaseColegios.arrcolegios[i].numeroAlumnos;
             nal = document.createElement("td");
-            nal.innerHTML = numeroAlumnos;
+            nal.innerHTML = numeroAlumnos2;
             tr.appendChild(nal);
 
-            var numeroAulas = arrayclaseColegios.arrcolegios[i].numeroAulas;
+            var numeroAulas2 = arrayclaseColegios.arrcolegios[i].numeroAulas;
             nau = document.createElement("td");
-            nau.innerHTML = numeroAulas;
+            nau.innerHTML = numeroAulas2;
             tr.appendChild(nau);
 
 
-            tabla.appendChild(tr);
-            cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
-            console.log("COLEGIO: " + cole.toString());
-            colegios.push(cole);
+            tablasecundaria.appendChild(tr);
+            //      cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
 
-            arrayclaseColegios.añadir(cole);
+            //    colegios.push(cole);
+
+            //  arrayclaseColegios.añadir(cole);
             //arrayclaseColegios = new Colegios(colegios);
 
             // console.log(nombre + " " + direccion + " " + localidad + " " + numeroAlumnos + " " + numeroAulas);
 
             //for(i = 0; i<arrayclaseColegios.length;i++){
-            console.log("COLEGIO: " + cole);
-            console.log(arrayclaseColegios.arrcolegios + "*****");
+
+
 
             //   }
 
         }
-        document.body.appendChild(tabla);
+        document.body.appendChild(tablasecundaria);
 
 
 
 
 
-        
+
     }
 
 
