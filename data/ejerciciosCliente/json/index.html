@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/json.js"></script>
+    <link rel="stylesheet" href="estilos/bootstrap-5.2.3-dist/css/bootstrap.css">
     <title>Document</title>
 </head>
+<style>
+    table{
+        margin: auto;
+    }
+    #container{
+        position: absolute;
+    }
+
+</style>
 <body onload="lanzarPeticionAsincrona()">
-    
-    <form action="" name="formulario" method="post">
-        <h3>Crear colegio</h3>
-        <label for="nombre" class="form-group">Nombre</label>
-        <input type="text" name="nombre" id="" class="form-control"><br>
-        
-        <label for="direccion" class="form-group">direccion</label>
-        <input type="text" name="direccion" id="" class="form-control"><br>
-        
-        <label for="localidad" class="form-group">localidad</label>
-        <input type="text" name="localidad" id="" class="form-control"><br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="" name="formulario" method="post">
+                    <h3>Crear colegio</h3>
+                    <label for="nombre" class="form-group">Nombre</label>
+                    <input type="text" name="nombre" id="" class="form-control">
 
-        <label for="numeroAlumnos" class="form-group">numeroalumnos</label>
-        <input type="text" name="numeroAlumnos" id="" class="form-control"><br>
+                    <label for="direccion" class="form-group">direccion</label>
+                    <input type="text" name="direccion" id="" class="form-control">
 
-        <label for="numeroaulas" class="form-group">numeroaulas</label>
-        <input type="text" name="numeroAulas" id="" class="form-control"><br>
+                    <label for="localidad" class="form-group">localidad</label>
+                    <input type="text" name="localidad" id="" class="form-control">
 
-        <input type="button" value="Enviar" onclick="enviardatos()">
-        <hr>
-       </form>
+                    <label for="numeroAlumnos" class="form-group">numeroalumnos</label>
+                    <input type="text" name="numeroAlumnos" id="" class="form-control">
+
+                    <label for="numeroaulas" class="form-group">numeroaulas</label>
+                    <input type="text" name="numeroAulas" id="" class="form-control">
+
+                    <input type="button" value="Enviar" onclick="enviardatos()" class="btn btn-success">
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
