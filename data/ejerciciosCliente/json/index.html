@@ -10,19 +10,28 @@
     <title>Document</title>
 </head>
 <style>
-    table{
+    table {
         margin: auto;
-    }
-    #container{
-        position: absolute;
+        text-align: center;
+        border: 2px solid black;
     }
 
+   
+
+    #formulariooculto {
+       border: 1px solid black;
+       width: 300px;
+       margin: auto;
+       display: none ;;
+        
+    }
 </style>
+
 <body onload="lanzarPeticionAsincrona()">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <form action="" name="formulario" method="post">
+                <form action="" id="formulario" method="post">
                     <h3>Crear colegio</h3>
                     <label for="nombre" class="form-group">Nombre</label>
                     <input type="text" name="nombre" id="" class="form-control">
@@ -45,6 +54,31 @@
             </div>
         </div>
     </div>
+
+
+
+    
+                <form action="" id="formulariooculto" method="post">
+                    <h3>Modificar colegio</h3>
+                    
+
+                    <label for="direccion">direccion</label>
+                    <input type="text" name="direccion" id="" ><br>
+
+                    <label for="localidad">localidad</label>
+                    <input type="text" name="localidad" id="" ><br>
+
+                    <label for="numeroAlumnos">numeroalumnos</label>
+                    <input type="text" name="numeroAlumnos" id="" ><br>
+
+                    <label for="numeroaulas">numeroaulas</label>
+                    <input type="text" name="numeroAulas" id="" ><br>
+
+                    <input type="button" value="Enviar" onclick="modificar()" class="btn btn-success">
+                    <hr>
+                </form>
+            
+    
 </body>
 
 </html>

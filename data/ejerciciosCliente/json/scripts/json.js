@@ -1,7 +1,19 @@
 var arrayclaseColegios;
 var cambio = false;
 var longitudArrayDatos;
+var contadorbotones = 0;
+
+var nombremodificar;
+var direccionmodificar;
+var localidadmodificar;
+var numeroAlumnosmodificar;
+var numeroAulasmodificar;
+
+
+
 function lanzarPeticionAsincrona() {
+   
+   
     arrayclaseColegios = new Colegios();
     //Generamos objeto
     var xhttp = new XMLHttpRequest();
@@ -18,7 +30,7 @@ function lanzarPeticionAsincrona() {
             tabla.border = 1;
             tabla.id = "tablainicial";
             tr = document.createElement("tr");
-
+            tr.id="fila"+i;
 
             n = document.createElement("td");
             n.innerHTML = "nombre"
@@ -47,6 +59,7 @@ function lanzarPeticionAsincrona() {
             for (var i = 0; i < arrayDatos.colegio.length; i++) {
 
                 tr = document.createElement("tr");
+                tr.id = "fila"+i;
 
                 var nombre = arrayDatos.colegio[i].nombre;
                 n = document.createElement("td");
@@ -79,9 +92,38 @@ function lanzarPeticionAsincrona() {
                 console.log("COLEGIO: " + cole.toString());
                 colegios.push(cole);
 
+                arrayclaseColegios.arrcolegios.push(cole);
+  
                 arrayclaseColegios.añadir(cole);
                 console.log("COLEGIO: " + cole);
                 console.log(arrayclaseColegios.arrcolegios + "*****");
+
+                var boton = document.createElement("button");
+                boton.innerHTML = "Modificar";
+                boton.id="boton"+i;
+                
+                 
+                boton.onclick = function(i){
+                    // colegiomod = document.getElementById(arrayclaseColegios.arrcolegios[i]);
+                    
+                    alert("El nombre es: "+boton.id);
+                    formulariooculto = document.getElementById("formulariooculto");
+                    formulariooculto.style.display = "block";
+                    separador = boton.id.split("boton");
+                    var iddef= separador[1];
+                    alert(iddef);
+                    formulario = document.forms.formulariooculto;
+                    alert("El nombre es: "+boton.id);
+                    direccionmodificar = formulario.direccion.value;
+                    localidadmodificar =formulario.localidad.value;
+                    numeroAlumnosmodificar=formulario.numeroAlumnos.value;
+                    numeroAulasmodificar=formulario.numeroAulas.value;
+                
+                };
+        
+
+                tr.appendChild(boton);
+    
 
             }
 
@@ -237,6 +279,26 @@ function enviardatos() {
             nau.innerHTML = numeroAulas2;
             tr.appendChild(nau);
 
+           
+
+            var boton = document.createElement("button");
+            boton.innerHTML = "Modificar";
+            boton.id="boton"
+
+
+            boton.addEventListener("click", function(){
+                alert("El nombre es: "+nombremodificar);
+                formulariooculto = document.getElementById("formulariooculto");
+                formulariooculto.style.display = "block";
+
+                formulario = document.forms.formulariooculto;
+                direccionmodificar = formulario.direccion.value;
+                localidadmodificar =formulario.localidad.value;
+                numeroAlumnosmodificar=formulario.numeroAlumnos.value;
+                numeroAulasmodificar=formulario.numeroAulas.value;
+            
+            });
+            tr.appendChild(boton);
 
             tablasecundaria.appendChild(tr);
 
@@ -255,4 +317,8 @@ function enviardatos() {
 
 
 
+}
+
+function modificar(){
+   // arrayclaseColegios.arrcolegios.nombre = 
 }
