@@ -2,7 +2,7 @@ var arrayclaseColegios;
 var cambio = false;
 var longitudArrayDatos;
 var contadorbotones = 0;
-var idmodificar;
+var idmodificar = 99;
 var contador = 1;
 var botonselection;
 
@@ -120,15 +120,22 @@ function enviardatos() {
 
 }
 
-function modificar() {
+/*var boton = document.getElementById("modificarcolegio");
+boton.onclick = function(){
+    alert("Aaaa");
+}*/
+function modificar(oa) {
     // arrayclaseColegios.arrcolegios.nombre = 
     formulario = document.forms.formulariooculto;
-    alert("DIRE mod: " + arrayclaseColegios.arrcolegios[idmodificar].direccion);
-    arrayclaseColegios.arrcolegios[idmodificar].direccion = formulario.direccion.value;
-    arrayclaseColegios.arrcolegios[idmodificar].localidad = formulario.localidad.value;
-    arrayclaseColegios.arrcolegios[idmodificar].numeroAlumnos = formulario.numeroAlumnos.value;
-    arrayclaseColegios.arrcolegios[idmodificar].numeroAulas = formulario.numeroAulas.value;
-   
+    alert(oa);
+    /* alert("DIRE mod: " + arrayclaseColegios.arrcolegios.colegio[idmodificar].direccion);
+     arrayclaseColegios.arrcolegios.colegio[idmodificar].direccion = formulario.direccion.value;
+     arrayclaseColegios.arrcolegios.colegio[idmodificar].localidad = formulario.localidad.value;
+     arrayclaseColegios.arrcolegios.colegio[idmodificar].numeroAlumnos = formulario.numeroAlumnos.value;
+     arrayclaseColegios.arrcolegios.colegio[idmodificar].numeroAulas = formulario.numeroAulas.value;
+     */
+    //var boton = documment.getElementById("modificarcolegio");
+
 
 }
 
@@ -145,6 +152,7 @@ function crearTabla(arrayclaseColegios) {
 
     tabla = document.createElement("table");
     tabla.border = 1;
+    tabla.className="table table-success table-striped";
     tabla.id = "tabla" + contador;
     tr = document.createElement("tr");
     tr.id = "fila" + i;
@@ -206,29 +214,50 @@ function crearTabla(arrayclaseColegios) {
         nau.innerHTML = numeroAulas;
         tr.appendChild(nau);
 
-
+        
         tabla.appendChild(tr);
         cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
 
 
         var boton = document.createElement("button");
-        boton.innerHTML = "Modificar"+i;
+        boton.className="btn btn-warning";
+        boton.innerHTML = "Modificar" + i;
         boton.id = "boton" + i;
-  
-         idboton = boton.id;
-        console.log("BOTON 00: "+idboton);
-        
 
-        boton.onclick = function (i) {
-           
-            console.log("BOTON FINAL: "+idboton);
-            alert("El nombre es: " + i.id);
+        boton.onclick = function (boton) {
+
+            console.log("boton: " + boton.target.id);
+
+
+            //
+            modificarcolegio = document.getElementById("modificarcolegio");
+
+            //
+
             formulariooculto = document.getElementById("formulariooculto");
             formulariooculto.style.display = "block";
-            separador = boton.id.split("boton");
+            separador = boton.target.id.split("boton");
             var iddef = separador[1];
+            console.log("EL id es " + iddef)
             idmodificar = iddef;
-           // modificar();
+
+
+            modificarcolegio.onclick = function () {
+
+
+                formulario = document.forms.formulariooculto;
+                alert("EL BOTON ES "+idmodificar);
+         
+                alert("EL BOTON ES "+arrayclaseColegios);
+
+                alert("DIRE mod: " + arrayclaseColegios.colegio[idmodificar].direccion);
+                arrayclaseColegios.colegio[idmodificar].direccion = formulario.direccion.value;
+                arrayclaseColegios.colegio[idmodificar].localidad = formulario.localidad.value;
+                arrayclaseColegios.colegio[idmodificar].numeroAlumnos = formulario.numeroAlumnos.value;
+                arrayclaseColegios.colegio[idmodificar].numeroAulas = formulario.numeroAulas.value;
+                crearTabla(arrayclaseColegios);
+            };
+
             // alert(iddef);
         };
 

@@ -13,17 +13,25 @@
     table {
         margin: auto;
         text-align: center;
-        border: 2px solid black;
+        
+        width: 80% !important;
+        
     }
 
-   
+    #formulario {
+        
+        box-shadow: 3 2px 4px lightgrey !important;
+    }
+
 
     #formulariooculto {
-       border: 1px solid black;
-       width: 300px;
-       margin: auto;
-       display: none ;;
-        
+       border: 1px solid grey !important;
+       border-radius: 5px;
+        width: 350px;
+        margin: auto;
+        display: none;
+        box-shadow: 3 2px 4px lightgrey !important;
+
     }
 </style>
 
@@ -48,7 +56,7 @@
                     <label for="numeroaulas" class="form-group">numeroaulas</label>
                     <input type="text" name="numeroAulas" id="" class="form-control">
 
-                    <input type="button" value="Enviar" onclick="enviardatos()" class="btn btn-success">
+                    <input type="button" value="Crear" onclick="enviardatos()" class="btn btn-success">
                     <hr>
                 </form>
             </div>
@@ -57,28 +65,28 @@
 
 
 
-    
-                <form action="" id="formulariooculto" method="post">
-                    <h3>Modificar colegio</h3>
-                    
 
-                    <label for="direccion">direccion</label>
-                    <input type="text" name="direccion" id="" ><br>
+    <form action="" id="formulariooculto" method="post">
+        <h3>Modificar colegio</h3>
 
-                    <label for="localidad">localidad</label>
-                    <input type="text" name="localidad" id="" ><br>
 
-                    <label for="numeroAlumnos">numeroalumnos</label>
-                    <input type="text" name="numeroAlumnos" id="" ><br>
+        <label for="direccion">direccion</label>
+        <input type="text" name="direccion" id=""><br>
 
-                    <label for="numeroaulas">numeroaulas</label>
-                    <input type="text" name="numeroAulas" id="" ><br>
+        <label for="localidad">localidad</label>
+        <input type="text" name="localidad" id=""><br>
 
-                    <input type="button" value="Enviar" onclick="modificar()" class="btn btn-success">
-                    <hr>
-                </form>
-            
-    
+        <label for="numeroAlumnos">numeroalumnos</label>
+        <input type="text" name="numeroAlumnos" id=""><br>
+
+        <label for="numeroaulas">numeroaulas</label>
+        <input type="text" name="numeroAulas" id=""><br>
+
+        <input type="button" value="Modificar" id="modificarcolegio" class="btn btn-warning">
+        <hr>
+    </form>
+
+
 </body>
 
 </html>
