@@ -13,7 +13,28 @@
         "direccion": "La jota",
         "localidad": "Zaragoza",
         "numeroAlumnos": "1800",
-        "numeroAulas": "26"
+        "numeroAulas": "28"
+    
+    },{
+        "nombre": "IES Tiempos Modernos",
+        "direccion": "Segundo Chomon",
+        "localidad": "Zaragoza",
+        "numeroAlumnos": "1700",
+        "numeroAulas": "24"
+    
+    },{
+        "nombre": "IES Numancia",
+        "direccion": "Las Marismas",
+        "localidad": "Madrid",
+        "numeroAlumnos": "2400",
+        "numeroAulas": "36"
+    
+    },{
+        "nombre": "IES Itaca",
+        "direccion": "avda Los estudiantes",
+        "localidad": "Zaragoza",
+        "numeroAlumnos": "1500",
+        "numeroAulas": "23"
     
     }
     

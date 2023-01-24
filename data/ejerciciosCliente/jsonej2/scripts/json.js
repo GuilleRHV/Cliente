@@ -3,7 +3,7 @@ var arrayclaseColegios;
 var idmodificar;
 //Usare esta variable para manejar la creacion de tabla dinamicas
 var contador = 1;
-var contadortd= 0;
+
 
 /********************************************************************************************************* */
 
@@ -35,6 +35,7 @@ function lanzarPeticionAsincrona() {
 
 
 /*******************CREAR COLEGIO*********************************************** */
+//Recoge los datos del formulario y crea un colegio
 function crearcolegio() {
     formulario = document.forms.formulario;
     nombre = formulario.nombre.value;
@@ -44,6 +45,7 @@ function crearcolegio() {
     numeroAulas = formulario.numeroAulas.value;
 
     var cole = new Colegio(nombre, direccion, localidad, numeroAlumnos, numeroAulas);
+    //Añade el colegio al array de Colegios
     arrayclaseColegios.arrcolegios.colegio.push(cole);
 
     alert("Se ha creado el colegio " + nombre);
