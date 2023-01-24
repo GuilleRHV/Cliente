@@ -1,0 +1,28 @@
+table {
+    margin: auto;
+    text-align: center;
+    width: 80% !important;
+    background-color: rgb(200, 255, 234);
+}
+
+#formulario {
+    box-shadow: 3 2px 4px lightgrey !important;
+}
+
+
+#formulariomodificar {
+    border: 1px solid grey !important;
+    border-radius: 5px;
+    width: 350px;
+    margin: auto;
+    display: none;
+    box-shadow: 3 2px 4px lightgrey !important;
+    background-color: rgb(252, 228, 212);
+    text-align: center;
+
+}
+#titulo{
+    text-align: center !important;
+    font-family: 'Times New Roman';
+    font-size: 35px;
+}

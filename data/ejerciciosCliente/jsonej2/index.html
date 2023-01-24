@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/clases/Colegio.js"></script>
+    <script src="scripts/clases/Colegios.js"></script>
+    <script src="scripts/json.js"></script>
+    <link rel="stylesheet" href="estilos/bootstrap.css">
+    <link rel="stylesheet" href="estilos/formularios.css">
+    <title>Document</title>
+</head>
+
+
+<body onload="lanzarPeticionAsincrona()">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!--Formulario de creacion de colegios-->
+                <form action="" id="formulario" method="post">
+                    <h3 id="titulo">Gestor de colegios</h3>
+                    <label for="nombre" class="form-group">Nombre</label>
+                    <input type="text" name="nombre" id="" class="form-control">
+
+                    <label for="direccion" class="form-group">Direccion</label>
+                    <input type="text" name="direccion" id="" class="form-control">
+
+                    <label for="localidad" class="form-group">Localidad</label>
+                    <input type="text" name="localidad" id="" class="form-control">
+
+                    <label for="numeroAlumnos" class="form-group">Numero de alumnos</label>
+                    <input type="text" name="numeroAlumnos" id="" class="form-control">
+
+                    <label for="numeroaulas" class="form-group">Numero de aulas</label>
+                    <input type="text" name="numeroAulas" id="" class="form-control">
+
+                    <input type="button" value="Crear" onclick="crearcolegio()" class="btn btn-success">
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Formulario modificacion de colegio seleccionado-->
+    <!--Hasta que no pulsemos el boton de modificar en la tabladinamica este formulario permanecera oculto (display:none)-->
+    <form action="" id="formulariomodificar" method="post">
+        <h3>Modificar colegio</h3>
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id=""><br>
+
+        <label for="direccion">Direccion</label><br>
+        <input type="text" name="direccion" id=""><br>
+
+        <label for="localidad">Localidad</label><br>
+        <input type="text" name="localidad" id=""><br>
+
+        <label for="numeroAlumnos">Numero de alumnos</label><br>
+        <input type="text" name="numeroAlumnos" id=""><br>
+
+        <label for="numeroaulas">Numero de aulas</label><br>
+        <input type="text" name="numeroAulas" id=""><br>
+
+        <input type="button" value="Modificar" id="modificarcolegio" class="btn btn-warning">
+        <hr>
+    </form>
+
+
+</body>
+
+</html>
