@@ -15,4 +15,7 @@ El selector nos va a determinar el elemento que vamos a acceder dentro del DOM,
 Cuando accedemos al selector con # accedemos con identificadores
 
 
+En la invocacion de la funcion jquery tendremos un argumento llamado contexto al que llamaremos callback que va a ser la que permita ejecutar codigo cuando finalice la funcion
+
+
 
