@@ -4,3 +4,7 @@
 Tiene el objetivo de ser rapida en el acceso y modificacion de los metodos html
 JQuery nos va a permitir desde la animacion de componentes hasta el manejo de eventos o al accesso y manipulacion de hojas de estilo.
 Otra de las caracteristivcas que ha echo iquery un etandar es que evita tener que programar de cara a distintos navegadores. 
+
+
+append()-> Añadir elementos. Esta funcion va a insertar el contenido sobre el ultimo hijo del elemento en la coleccion. El tipo de eleemnto que podremos pasar como argumento podra ser una cadena de texto html, un texto o un array de objetos jquery. 
+Por contra se queremos meterlo al principio tenemos la funcion __prepend()__ 
