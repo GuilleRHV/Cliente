@@ -28,7 +28,7 @@ Por contra se queremos meterlo al principio tenemos la funcion __prepend()__
 
 * __text()__ ->Obtendra una cadena de texto formada por todos los elementos de tipo texto de los hijos del elemento llamado, si le pasamos un argumento va a asignar la cadena al elemento referenciado.
 
-
+# Examen 8 marzo
 ## Ejercicio
 Ejercicio generar un html: de forma dinamica usando solo jquery 
 1. El div principal (parrafo titulo y botones de control) seguiran siendo elementos estaticos dentro de la pagina
