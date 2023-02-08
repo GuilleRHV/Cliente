@@ -1,0 +1,22 @@
+.clase1{
+	font-style: italic;
+	font-size: 20px;
+	color:green;
+}
+
+.clase2{
+	font-style: italic;
+	font-size: 15px;
+	font-weight: bold;
+	color:blue;
+}
+
+
+#divAnimacion1{
+	position: absolute;
+    background-color: #aab9c5;
+    left: 300px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}

@@ -12,7 +12,7 @@ $("body",function()
 {
 alert('alertt')
 }).append("<p>Pruebaaa</p>")*/
-$
+
 
 $("body",callBackDeBody()).append("<span>Text desde jquery</span> ")
 

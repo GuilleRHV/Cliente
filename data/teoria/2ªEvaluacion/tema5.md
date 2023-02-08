@@ -35,3 +35,32 @@ Ejercicio generar un html: de forma dinamica usando solo jquery
 2. Los bloques de informacion van a ser generados de forma aleatoria ayudandose de la funcion __mathrandom()__ de forma que el numero de bloques sea aleatorio,
 3.  dentro de estos el parrafo de titulo de bloque será fijo. y el resto aleatorios tambien
 4. La generacion de elementos y propiedades debe ser hecha de forma dinamica con jquery
+
+
+
+
+
+# Manejo de eventos jquery
+
+Al igual que js, en jquery vamos a poder modificar los eventos asociados a los elementos
+
+Funciones:
+* one() -> Nos va a permitir asignar una funcion al evento para que sea ejecutada una sola vez. Va a recibir 2 argumentos: 1l 1º la cadena con el nombre del evento y la 2º la funcion a ejecutar
+
+$(@btn).one("click",function(){
+alert("Disparando 1 vez")
+});
+
+
+# Delegacion de eventos
+## Ejercicio
+vamos a tener el par de funciones on/off que nos va a permitir asignar y desasignar eventos en tiempo de ejecucion, tal como podriamos hacer en Js
+Nos va a permitir asignar eventos por pertenecer a un grupo, el evento se va a asociar al padre y se llamara por un filtro que identifique el hijo que lo llamka, de forma que el evento se lanza asociado al hijo correspondiente.
+ 
+La funcion __on__ puede terner la siguiente sintaxis
+
+_on(eventos,[selector],[data],handler)_
+* eventos-> va a determinar los eventos a asociar, puede ser 1 o varios separados por espacion
+* selector-> es opcionar y va a permitir filtrar los elementos hijos desde lo que queremos que se asocie el manejador de eventos.
+* data-> Es opcional, puede ser cualquer tipo de dato que necesitemos pasar a la funcion.
+* handler-> Va a ser la funcion asociada al evento, se dispara cuando el evento se ha lanzado
