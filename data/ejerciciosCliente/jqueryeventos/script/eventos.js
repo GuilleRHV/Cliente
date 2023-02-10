@@ -17,7 +17,7 @@ $(document).ready(function (){
 
 	 });
 
-	 $('#btnDesasocia').click(function (){
+	 $('#btnDesasocia').on("click",function (){
 	 	alert("El evento click ha sido desasociado al div1");
  		// vamos a desasociar el evento Click a div1
  		$('#div1').off();

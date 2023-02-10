@@ -24,34 +24,34 @@ $("body",callBackDeBody()).append("<span>Text desde jquery</span> ")
 rellenar(arrayparrafos);
 
 
-$(".tituloon").click(function(){
+$(".tituloon").on("click",function(){
     $(".titulo").css("font-size","30px").css("font-weight","bold").css("color","red");
 });
-$(".tituloof").click(function(){
+$(".tituloof").on("click",function(){
     $(".titulo").css("font-size","").css("font-weight","").css("color","");
 });
 
 
-$(".24px").click(function(){
+$(".24px").on("click",function(){
     $(".tituloparrafo").css("font-size","24px").css("font-family","italic").css("color","diference").css("color","blue");
 });
-$(".quitar24px").click(function(){
+$(".quitar24px").on("click",function(){
     $(".tituloparrafo").css("font-size","").css("font-family","").css("color","").css("color","");
 });
 
-$(".estilotexto").click(function(){
+$(".estilotexto").on("click",function(){
     $(".info").css("font-size","20px").css("color","green");
 });
-$(".quitarestilotexto").click(function(){
+$(".quitarestilotexto").on("click",function(){
     $(".info").css("font-size","").css("color","");
 });
 
 
-$(".bordeon").click(function(){
+$(".bordeon").on("click",function(){
     $(".info").css("border","1px solid blue");
 });
 
-$(".bordeof").click(function(){
+$(".bordeof").on("click",function(){
     $(".info").css("border","");
 });
 
