@@ -23,6 +23,16 @@ $(document).ready(function (){
  		$('#div1').off();
 	 });
 
+
+	 //INVISIBLE
+
+	 $("span").on("click",function(){
+		// $(this).fadeOut(2000);   
+		
+		$(this).fadeOut(2000);
+	   
+	});
+
 /*		 */
 
 // caso 1	

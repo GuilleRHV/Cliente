@@ -62,6 +62,14 @@ $(".bordeof").on("click",function(){
 //console.log(generarnumeroaleatorio());
 
 
+
+
+$("*").on("click",function(){
+    // $(this).fadeOut(2000);   
+    var clicked = this.id;
+    $("#"+clicked+"").fadeOut(2000);
+   
+});
 });
 
 

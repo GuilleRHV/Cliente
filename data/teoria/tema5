@@ -8,3 +8,16 @@ Otra de las caracteristivcas que ha echo iquery un etandar es que evita tener qu
 
 append()-> Añadir elementos. Esta funcion va a insertar el contenido sobre el ultimo hijo del elemento en la coleccion. El tipo de eleemnto que podremos pasar como argumento podra ser una cadena de texto html, un texto o un array de objetos jquery. 
 Por contra se queremos meterlo al principio tenemos la funcion __prepend()__ 
+
+
+
+ANIMACIONES
+
+Jquery nos va a permitir animar contenido gracias a la modificacion de los elementos html y sus propiedades css. funciones
+* show
+* hide
+Nos van a permitir mostrar u ocultar los elementos seleccionados
+La funcion se puede pasar sin argumentos o coun un argumento que puede ser el valor numerico en milisegundos o una cadena que represente la velocidad
+(1000)  ("slow") ("normal") ("faster")
+Nos va a permitir ademas s una funcion 
+

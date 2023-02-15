@@ -64,3 +64,29 @@ _on(eventos,[selector],[data],handler)_
 * selector-> es opcionar y va a permitir filtrar los elementos hijos desde lo que queremos que se asocie el manejador de eventos.
 * data-> Es opcional, puede ser cualquer tipo de dato que necesitemos pasar a la funcion.
 * handler-> Va a ser la funcion asociada al evento, se dispara cuando el evento se ha lanzado
+
+
+
+
+# ANIMACIONES
+
+Jquery nos va a permitir animar contenido gracias a la modificacion de los elementos html y sus propiedades css. funciones
+* __show
+* __hide
+Nos van a permitir mostrar u ocultar los elementos seleccionados
+La funcion se puede pasar sin argumentos o coun un argumento que puede ser el valor numerico en milisegundos o una cadena que represente la velocidad
+(1000)  ("slow") ("normal") ("faster")
+Nos va a permitir ademas s una funcion 
+
+
+* __fadeIn__
+* __fadeOut__
+Estas funciones van a modificar la opacidad del componente, el funcionamiento será equivalente a las funciones anteriores 
+
+* __fadeTo__
+Nos va a generar una animacion en la que varia la opacidad de los elementos invocados, esta funcion es similar a fadeIn pero a diferencia de esta no va a mostrar completamente el elemento ya que fadeIn devuelve una opacidad del 100%
+
+* __animate__
+Me va a dejar hacer modificaciones a medida de los css, los argumentos que pasare a la funcion van a ser las propiedades que quiero modificar que serán propiedades css, podre pasarle a continuacion una serie de opciones como por ejemplo la duracion de la animacion, despues podremos invocar la funcion de retorno
+
+Teniendo por ej un objeto 
