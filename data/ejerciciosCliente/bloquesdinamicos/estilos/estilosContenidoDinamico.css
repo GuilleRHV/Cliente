@@ -1,0 +1,52 @@
+.clase1{
+	font-style: italic;
+	font-size: 20px;
+	color:green;
+}
+
+.clase2{
+	font-style: italic;
+	font-size: 15px;
+	font-weight: bold;
+	color:blue;
+}
+
+.tituloPrincipal{
+	display: inline-block;
+	background-color: white;
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 30px;
+	font-weight: bold;
+	color: navy;
+}
+
+.tituloParrafo{
+	display: inline-block;
+	background-color: white;
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	font-family: Times New Roman;
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-top: 20px;
+	color: darkmagenta;
+	font-style: italic;
+}
+
+.textoParrafo{
+	background-color: white;
+	margin: auto;
+	text-align: left;
+	font-family: Helvetica;
+	font-size: 18px;
+	padding-left: 30px;
+	color: black;
+	margin-bottom:10px;
+}

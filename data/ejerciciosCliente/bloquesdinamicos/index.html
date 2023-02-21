@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Contenido Dinámico</title>
+		<script src="script/jquery-3.5.1.js"></script>
+		<script src="script/utilidades/generadorElementos.js"></script>
+		<script src="script/contenidoDinamico.js"></script>
+		<link rel="stylesheet" href="estilos/estilosBasicos.css">
+		<link rel="stylesheet" href="estilos/estilosContenidoDinamico.css">
+	</head>
+	<body id="cuerpo">
+		<div id="cabecera" class="sombreado redondeado">Cabecera</div>
+		<div id="cuerpo">
+			<div id="divPrincipal"></div>
+			<div id="controles">
+				<div class="contenido sombreado redondeado" >
+					<div class="componenteBotonera">
+						<div class="componenteBotoneraElementos">
+							<span class="componenteBotoneraElementosSpan"> Título principal</span>
+							<div class="componenteBotoneraElementosBotones">
+								<input type="button" id="btnTituloPrincipalActivar"  value="Activar" onclick="btnTituloPrincipalActivar_onClick()"/>
+								<input type="button" id="btnTituloPrincipalDesactivar"  value="Desactivar" onclick="btnTituloPrincipalDesactivar_onClick()"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="componenteBotonera">
+						<div class="componenteBotoneraElementos">
+							<span class="componenteBotoneraElementosSpan"> Título párrafo</span>
+							<div class="componenteBotoneraElementosBotones">
+								<input type="button" id="btnTituloParrafoActivar"  value="Activar" onclick="btnTituloParrafoActivar_onClick()"/>
+								<input type="button" id="btnTituloParrafoDesactivar"  value="Desactivar" onclick="btnTituloParrafoDesactivar_onClick()"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="componenteBotonera">
+						<div class="componenteBotoneraElementos">
+							<span class="componenteBotoneraElementosSpan"> Texto párrafo</span>
+							<div class="componenteBotoneraElementosBotones">
+								<input type="button" id="btnTextoParrafoActivar"  value="Activar" onclick="btnTextoParrafoActivar_onClick()"/>
+								<input type="button" id="btnTextoParrafoDesactivar"  value="Desactivar" onclick="btnTextoParrafoDesactivar_onClick()"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="componenteBotonera">
+						<div class="componenteBotoneraElementos">
+							<span class="componenteBotoneraElementosSpan"> Marcos Divs</span>
+							<div class="componenteBotoneraElementosBotones">
+								<input type="button" id="btnMarcosDivActivar"  value="Activar" onclick="btnMarcosDivActivar_onClick()"/>
+								<input type="button" id="btnMarcosDivDesactivar"  value="Desactivar" onclick="btnMarcosDivDesactivar_onClick()"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="componenteBotonera">
+						<div class="componenteBotoneraElementos">
+							<span class="componenteBotoneraElementosSpan"> Marcos básicos</span>
+							<div class="componenteBotoneraElementosBotones">
+								<input type="button" id="btnMarcosBasicosActivar"  value="Activar" onclick="btnMarcosBasicosActivar_onClick()"/>
+								<input type="button" id="btnMarcosBasicosDesactivar"  value="Desactivar" onclick="btnMarcosBasicosDesactivar_onClick()"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+			</div>
+		</div>
+		<div id="pie" class="sombreado redondeado">pie</div>
+	</body>
+</html>

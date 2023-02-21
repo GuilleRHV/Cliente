@@ -140,3 +140,14 @@ function rellenar(arrayparrafos){
         console.log(x);
     }
 }
+
+/**********************************************
+ * ******************************************
+ */
+
+function generarBotoneraTituloPrincipal(){
+    let id =1;
+    let textoBotonera = "Titulo principal";
+    let botonera = generarComponenteBotonera5(id,textoBotonera);
+    inyectarElementoDom($("#controlesBotoneras")[0],botonera[0]);
+}   insertarEventosBotonera($botonera, $divElementoBotonera)
