@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colegios>
+    <colegio>
+        <nombre>San Ignacio</nombre>
+        <direccion>Avda Olmo</direccion>
+        <localidad>Madrid</localidad>
+        <numeroAlumnos>2300</numeroAlumnos>
+        <numeroAulas>49</numeroAulas>
+    </colegio>
+    <colegio>
+    <nombre>IES Santiago Hernandez</nombre>
+        <direccion>Delc</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>1600</numeroAlumnos>
+        <numeroAulas>30</numeroAulas>
+    </colegio>
+    <colegio>
+        <nombre>IES Pilar Lorengar</nombre>
+        <direccion>La jota</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>1900</numeroAlumnos>
+        <numeroAulas>40</numeroAulas>
+    </colegio>
+    <colegio>
+        <nombre>Agustinos</nombre>
+        <direccion>Romd</direccion>
+        <localidad>Zaragoza</localidad>
+        <numeroAlumnos>2300</numeroAlumnos>
+        <numeroAulas>50</numeroAulas>
+    </colegio>
+</colegios>
