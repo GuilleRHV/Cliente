@@ -1,0 +1,10 @@
+Mis notificaciones -> Informacion ->Poca legibilidad (texto demasiado pequeño y demasiada informacion desordenada)+
+			PDF->Centrado de la tabla
+			Tabla X -> El texto excede el ancho de la tabla
+			Servicios: Poca visibildad de la tipografia (texto y boton con colores similares)
+			Pagos: botones inferiores con tamaño de texto demasiado pequeño
+				
+			Perfil partidos->Mis amigos->Los botones fuera del cajetín pueden generar confusion (arriba/abajo), es aplicable a varios ru
+			Partidos: Poca legibilidad debido a los colores del boton y texto
+				Hay 2 botones repetidos de cada uno (tenis,padel..)
+			Rutina-> Cardio aparece desencajado y el la unica sin imagen
