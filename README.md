@@ -1,5 +1,14 @@
 # Repositorio de Cliente
 
+function local_tumoodle_extend_navigation_course($navigation, $course, $context) {
+    // Verifica si el usuario actual tiene permisos de acceso al curso.
+    if (has_capability('moodle/course:view', $context)) {
+        $url = new moodle_url('/local/tumoodle/example.php', array('courseid' => $course->id));
+        $navigation->add(get_string('example', 'local_tumoodle'), $url, navigation_node::TYPE_CUSTOM, null, 'example');
+    }
+}
+
+
 // En tu archivo lib.php de tu plugin local
 
 function local_tu_plugin_extend_navigation(global_navigation $navigation) {
