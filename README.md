@@ -1,5 +1,29 @@
 # Repositorio de Cliente
 
+// En tu archivo lib.php de tu plugin local
+
+function local_tu_plugin_extend_navigation(global_navigation $navigation) {
+    global $PAGE;
+
+    // Enlace a la página de fototerapia (dashboard)
+    $node = $navigation->add('Fototerapia', new moodle_url('/local/tu_plugin/dashboard.php'));
+    $node->set_parent($navigation->find('Dashboard'));
+
+    // Enlace al navegador de calificaciones
+    $node = $navigation->add('Navegador de Calificaciones', new moodle_url('/grade/index.php'));
+    $node->set_parent($navigation->find('Gradebook'));
+
+    // Enlace a la página de participantes
+    $node = $navigation->add('Participantes', new moodle_url('/user/index.php'));
+    $node->set_parent($navigation->find('Participants'));
+
+    // Enlace a la página de reportes
+    $node = $navigation->add('Reportes', new moodle_url('/report/index.php'));
+    $node->set_parent($navigation->find('Reports'));
+}
+
+
+
 En Moodle, puedes agregar una barra de paginación a una tabla utilizando la clase `paging_bar`. A continuación, te muestro un ejemplo de cómo crear una barra de paginación en Moodle:
 
 ```php
