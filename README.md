@@ -1,5 +1,70 @@
 # Repositorio de Cliente
 
+Si deseas crear una página en Moodle con una tabla paginada, puedes hacerlo utilizando el componente de paginación de Moodle. Aquí hay una guía simplificada de los pasos para crear una página con una tabla paginada en Moodle PHP:
+
+1. **Crea un nuevo plugin:**
+   - Debes crear un nuevo plugin para agregar tu página personalizada. Utiliza el generador de plugins de Moodle o crea tu propio plugin.
+
+2. **Define una ruta para la página:**
+   - En el archivo `version.php` de tu plugin, define una ruta para la página personalizada. Por ejemplo:
+
+   ```php
+   $plugin->component = 'local_tumoodleplugin';
+   $plugin->version = 2023101700; // Ajusta la versión según tu plugin
+   ```
+
+3. **Crea la página personalizada con paginación:**
+   - Crea un archivo PHP para tu página personalizada, por ejemplo, `my_custom_page.php`, en el directorio de tu plugin.
+
+   ```php
+   <?php
+   require_once('../../../config.php');
+   require_login();
+
+   $page = optional_param('page', 0, PARAM_INT);
+   $perpage = 10; // Número de elementos por página
+
+   // Aquí puedes generar tu tabla HTML paginada
+   $table = new html_table();
+   $table->attributes['class'] = 'generaltable';
+   $table->head = array('Encabezado 1', 'Encabezado 2');
+   
+   // Consulta de base de datos o generación de datos para llenar la tabla
+   // Supongamos que tienes una matriz $data con los datos
+
+   // Llena la tabla con los datos correspondientes a la página actual
+   $start = $page * $perpage;
+   $end = $start + $perpage;
+   for ($i = $start; $i < $end && $i < count($data); $i++) {
+       $row = array($data[$i]['column1'], $data[$i]['column2']);
+       $table->data[] = $row;
+   }
+
+   echo $OUTPUT->header();
+   echo $OUTPUT->heading('Mi Página con Tabla Paginada');
+   echo html_writer::table($table);
+
+   // Agrega la paginación
+   $totalrows = count($data);
+   $pageparams = array('page' => $page);
+   echo $OUTPUT->paging_bar($totalrows, $page, $perpage, "my_custom_page.php", $pageparams);
+
+   echo $OUTPUT->footer();
+   ```
+
+4. **Registra la página en el plugin:**
+   - En el archivo `settings.php` de tu plugin, registra la página personalizada de la misma manera que se muestra en el paso anterior.
+
+5. **Acceso a la página:**
+   - Ahora, los usuarios pueden acceder a la página personalizada paginada a través de la interfaz de administración de Moodle.
+
+Asegúrate de personalizar la consulta de base de datos y los datos de la tabla según tus necesidades específicas. Con estos pasos, habrás creado una página en Moodle con una tabla paginada.
+
+
+
+
+
+
 function local_tumoodle_extend_navigation_course($navigation, $course, $context) {
     // Verifica si el usuario actual tiene permisos de acceso al curso.
     if (has_capability('moodle/course:view', $context)) {
