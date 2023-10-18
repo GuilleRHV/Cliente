@@ -1,4 +1,16 @@
 # Repositorio de Cliente
+En moodle añadir el firstname y lastname juntos en el select
+$mform->addElement(
+            'select',
+            'teacherid',
+            get_string('teachers', 'local_isyc_feedback_teacher'),
+            array_combine(
+                array_column($teachers, 'id'), // Id as value
+                array_column($teachers, 'firstname') // Name as et
+            )
+        );
+
+
 
 Si deseas crear una página en Moodle con una tabla paginada, puedes hacerlo utilizando el componente de paginación de Moodle. Aquí hay una guía simplificada de los pasos para crear una página con una tabla paginada en Moodle PHP:
 
