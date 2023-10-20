@@ -1,14 +1,21 @@
 # Repositorio de Cliente
-En moodle añadir el firstname y lastname juntos en el select
-$mform->addElement(
-            'select',
-            'teacherid',
-            get_string('teachers', 'local_isyc_feedback_teacher'),
-            array_combine(
-                array_column($teachers, 'id'), // Id as value
-                array_column($teachers, 'firstname') // Name as et
-            )
-        );
+
+
+// Espera a que el documento esté listo
+$(document).ready(function() {
+    // Agrega un manejador de clic al botón
+    $("#miBoton").click(function() {
+        // Realiza una solicitud AJAX a un archivo PHP
+        $.ajax({
+            url: "tufuncion.php", // Reemplaza "tufuncion.php" por la ruta correcta de tu archivo PHP
+            type: "POST", // Puedes usar POST o GET según tus necesidades
+            success: function(response) {
+                // La respuesta del servidor se maneja aquí
+                alert("Respuesta del servidor: " + response);
+            }
+        });
+    });
+});
 
 
 
