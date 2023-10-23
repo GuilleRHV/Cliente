@@ -1,5 +1,38 @@
 # Repositorio de Cliente
 
+
+Puedes validar un archivo CSV en PHP al cargarlo en tu formulario de Moodle y procesarlo. Aquí hay un ejemplo simple de cómo validar un archivo CSV en PHP en el contexto de Moodle:
+
+```php
+// Verifica si se ha enviado un archivo CSV
+if (isset($_FILES['csv_file']) && $_FILES['csv_file']['error'] == 0) {
+    $file_name = $_FILES['csv_file']['name'];
+    $file_size = $_FILES['csv_file']['size'];
+    $file_tmp = $_FILES['csv_file']['tmp_name'];
+
+    // Verifica la extensión del archivo
+    $file_extension = pathinfo($file_name, PATHINFO_EXTENSION);
+    if ($file_extension != 'csv') {
+        echo 'Por favor, sube un archivo CSV válido.';
+    } else {
+        // Realiza la validación adicional según tus necesidades
+
+        // Procesa el archivo CSV
+        if (move_uploaded_file($file_tmp, 'ruta_de_guardado/' . $file_name)) {
+            // El archivo CSV se ha subido correctamente
+            echo 'El archivo CSV se ha subido correctamente.';
+        } else {
+            echo 'Error al subir el archivo CSV.';
+        }
+    }
+} else {
+    echo 'Por favor, selecciona un archivo CSV para subir.';
+}
+```
+
+Asegúrate de personalizar este código según tus necesidades específicas. Puedes realizar validaciones adicionales en los datos del archivo CSV una vez que se haya subido y procesado.
+
+
 Puedes validar un archivo CSV en PHP al cargarlo en tu formulario de Moodle y procesarlo. Aquí hay un ejemplo simple de cómo validar un archivo CSV en PHP en el contexto de Moodle:
 
 ```php
