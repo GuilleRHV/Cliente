@@ -1,4 +1,18 @@
 # Repositorio de Cliente
+## Js
+define(['jquery'], function($) {
+    return {
+        init: function() {
+            // Tu código JavaScript aquí
+            // Ejemplo: Mostrar un mensaje en la consola
+            console.log("¡Mi módulo JavaScript se ha cargado correctamente!");
+        }
+    };
+});
+
+## php
+// Obtén el objeto de la página actual
+$PAGE->requires->js_call_amd('mi_modulo/main', 'init');
 
 
 Puedes validar un archivo CSV en PHP al cargarlo en tu formulario de Moodle y procesarlo. Aquí hay un ejemplo simple de cómo validar un archivo CSV en PHP en el contexto de Moodle:
