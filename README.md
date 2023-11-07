@@ -1,4 +1,29 @@
 # Repositorio de Cliente
+class moodleform_custom extends moodleform {
+    function definition() {
+        $mform = $this->_form;
+        $mform->addElement('select', 'userid', 'Selecciona un usuario', $user_options);
+        $mform->addElement('html', '<div id="user-image"></div>');
+        $this->add_action_buttons(false, 'Mostrar imagen');
+    }
+}
+
+// En tu archivo JavaScript
+$(document).ready(function() {
+    $('#id_userid').change(function() {
+        var userid = $(this).val();
+        $.ajax({
+            url: 'tu_script_ajax.php',
+            method: 'POST',
+            data: { userid: userid },
+            success: function(data) {
+                $('#user-image').html('<img src="' + data + '" alt="Imagen de usuario" />');
+            }
+        });
+    });
+});
+
+
 ## Js
 define(['jquery'], function($) {
     return {
